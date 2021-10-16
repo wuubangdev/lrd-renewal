@@ -173,6 +173,8 @@ export async function generateEnglishVersion(
     safeSource.privateFacts = [];
   }
   const translated = await translatedDraft(kind, safeSource);
+  // Imported research keys identify the original source record globally, not its translations.
+  if (kind === "RESEARCH") translated.sourceKey = "";
   if (site) {
     Object.assign(translated, await mapSiteReferences(translated));
     if (kind === "HOME" && Array.isArray(translated.featuredIds)) {
@@ -209,7 +211,6 @@ export async function generateEnglishVersion(
     : existing
       ? await api<Resource>(path(kind, existing.targetId, "en"))
       : await create(kind, source);
-  if (!site && !existing) await linkTarget(kind, sourceId, target.id);
   const endpoint =
     kind === "ARTICLE" || ["STAFF", "LABORATORY", "EDITORIAL", "RESEARCH"].includes(kind)
       ? `${path(kind, target.id, "en")}/draft`
@@ -219,5 +220,6 @@ export async function generateEnglishVersion(
     headers: matchVersion(target.version),
     body: JSON.stringify(translated),
   });
+  if (!site && !existing) await linkTarget(kind, sourceId, target.id);
   return { id: target.id, href: englishEditorPath(kind, target.id) };
 }
