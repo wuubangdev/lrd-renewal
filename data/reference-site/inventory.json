@@ -1,0 +1,758 @@
+[
+  {
+    "url": "https://lrd.ctu.edu.vn/",
+    "title": "Bộ môn Tài nguyên Đất đai - Trang chủ",
+    "sha256": "1ef896d17f89d0bb45f946c4b0d470ca5c532f43a3660e02f1e0764f24d15528",
+    "published": null,
+    "destination": null,
+    "status": "home",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/gioi-thieu/gioithieu.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Giới thiệu",
+    "sha256": "f064908a9e76930b825214efad0d0c726a1a7968d537a99f31c96debcbdf37a7",
+    "published": "2021-10-27T14:42:50+00:00",
+    "destination": "/vi/tin-tuc/gioi-thieu-bo-mon-tai-nguyen-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/gioi-thieu/nhan-su-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Nhân sự",
+    "sha256": "04a94844a0d1e5cd4874bcc36d548a0301c123cfd6acaa7f615b9da4b87199ce",
+    "published": "2021-10-08T09:05:57+00:00",
+    "destination": "/vi/tin-tuc/doi-ngu-bo-mon-tai-nguyen-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/dao-tao-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đào tạo",
+    "sha256": "7b07c18a0c3aefcdeb5ca7a62e50a547727746f577c22fb865aceb21c47b2121",
+    "published": "2021-10-08T09:00:50+00:00",
+    "destination": "/vi/dao-tao",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/dao-tao-2/quan-ly-dat-dai-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đại học QLĐĐ",
+    "sha256": "eb7745135f70b6dad19c6fa7d4430f0e902bb14d378a89093ac8efe5249dfbfd",
+    "published": "2021-10-28 17:04:22",
+    "destination": "/vi/dao-tao/ky-su-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/dao-tao-2/ch-qldd-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Thạc sĩ Quản lý đất đai",
+    "sha256": "885cc9062c7868d61aaadcd6786942568fb24f52c15742e70c9f04f86961aeb5",
+    "published": "2021-10-08T08:41:21+00:00",
+    "destination": "/vi/dao-tao/thac-si-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/dao-tao-2/ts-qldd-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tiến sĩ QLĐĐ",
+    "sha256": "f6b1c728c7c4fe53ab5433ae4ea2ff5192a7b1531d28bef5dafe51ca9c12464d",
+    "published": "2021-10-08T09:00:50+00:00",
+    "destination": "/vi/dao-tao/tien-si-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/dao-tao-2/a-i-ha-c-quy-hoa-ch-va-ng-va-a-tha.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đại học Quy hoạch vùng và Đô thị",
+    "sha256": "140622eba8ff05b9cb68dfe8331d9b885d7c54897816f042b7cb125c3df02079",
+    "published": "2026-03-16T00:00:33+00:00",
+    "destination": "/vi/dao-tao/ky-su-quy-hoach-vung-va-do-thi",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/phong-tn-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phòng thí nghiệm",
+    "sha256": "ce6d9a3bb8432fcd25f921500960313342a74438825a89719b291cced75d6e0e",
+    "published": "2021-12-10T08:22:42+00:00",
+    "destination": "/vi/tin-tuc?category=NGHIEN_CUU",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/phong-tn-2/ptn-gis-vt-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phòng TN GIS và Viễn Thám",
+    "sha256": "f9a852a04a82f55495f6d8d5eea3ef105f96bccc2036116a1ec9758223808a72",
+    "published": "2021-10-08T10:14:17+00:00",
+    "destination": "/vi/tin-tuc/phong-thi-nghiem-gis-va-vien-tham",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/phong-tn-2/ptn-tndd-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phòng TN Tài nguyên đất đai",
+    "sha256": "9ffdb04e4d864ae24821dd01fb5fe1513659e156b5da4255b219c7ec50b4f3ee",
+    "published": "2021-10-08T10:14:57+00:00",
+    "destination": "/vi/tin-tuc/phong-thi-nghiem-tai-nguyen-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/phong-tn-2/facilities-vn.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Trang thiết bị",
+    "sha256": "4aa0deeead5cd26d40ce024955058ad418fadb1082cf3fd116972640a72a0a42",
+    "published": "2021-12-10T08:22:42+00:00",
+    "destination": "/vi/tin-tuc/trang-thiet-bi-phuc-vu-dao-tao-va-nghien-cuu",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đảm bảo chất lượng",
+    "sha256": "1e602c51d48a17372acaf9f52a1fcab9e3f74a3b14d531a838698a488d91ccfe",
+    "published": "2022-01-06T02:05:19+00:00",
+    "destination": "/vi/tin-tuc/bao-dam-chat-luong-voi-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/gioi-thieu-aun-qa.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Giới thiệu về AUN-QA",
+    "sha256": "179a5ec08df3948377e0246115b836a1cd5d0da122ce120c4895e9c928a8b5e0",
+    "published": "2021-10-08T07:53:50+00:00",
+    "destination": "/vi/tin-tuc/bao-dam-chat-luong-voi-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/danh-muc-minh-chung-aun-qa.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Danh mục minh chứng AUN-QA",
+    "sha256": "9eed1589b22141bd3cda5838e7c4b9ec3b5f41d4793132bee928a5a15306c086",
+    "published": "2021-10-08T07:56:33+00:00",
+    "destination": "/vi/tin-tuc/danh-muc-minh-chung-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/quy-cach-ctdt.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Quy cách chương trình đào tạo QLĐĐ",
+    "sha256": "0e031786add531a51a0b834cc2942b9d01ce91c3fc653e6ecde549c5e36342f7",
+    "published": "2021-10-08T08:03:39+00:00",
+    "destination": "/vi/tin-tuc/quy-cach-chuong-trinh-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Chương trình đánh giá chất lượng AUN-QA",
+    "sha256": "271468f40a1fc6eccc4d1f7da608b39587886ac30cad2bad096d4b05fdc24951",
+    "published": "2022-01-06T02:05:19+00:00",
+    "destination": "/vi/tin-tuc/danh-gia-ngoai-aun-qa-chuong-trinh-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/phien-khai-mac-aun-qa.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phiên khai mạc đánh giá CTĐT theo chuẩn AUN-QA",
+    "sha256": "060bf7336f45abbce8e8c2dd16f1a2c14d363b38e6d2eaf875ed31b3469fd420",
+    "published": "2022-01-06T01:52:13+00:00",
+    "destination": "/vi/tin-tuc/khai-mac-danh-gia-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/phien-be-mac-aun-qa.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phiên bế mạc đánh giá CTĐT theo chuẩn AUN-QA",
+    "sha256": "f984c4e7fa352fb7f6bffe9bbae5ee771c7d3e127a7a530e140097e68b39fa8d",
+    "published": "2022-01-06T01:44:48+00:00",
+    "destination": "/vi/tin-tuc/be-mac-danh-gia-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/loi-cam-on.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Lời cảm ơn",
+    "sha256": "595ca559c6ad7061a4de8db748392173215f610daaad9972aa6dab7d4a7e61f0",
+    "published": "2022-01-06T01:47:47+00:00",
+    "destination": "/vi/tin-tuc/ghi-nhan-dong-gop-cho-dot-danh-gia-aun-qa",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Nghiên cứu",
+    "sha256": "1cd36ddf09076d8c123e9feaeabaec9b83d6e44f8993fbe0da0624c59b6acafd",
+    "published": null,
+    "destination": "/vi/tin-tuc?category=NGHIEN_CUU",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/du-an-hop-tac-quoc-te.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Dự án hợp tác quốc tế",
+    "sha256": "a352946a413d106476e6bfdd91cf6a21bf2daa73584a082949bce6318a3299d5",
+    "published": "2018-03-10 07:11:44",
+    "destination": "/vi/tin-tuc/hop-tac-nghien-cuu-quoc-te",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/de-tai-trong-nuoc.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đề tài trong nước",
+    "sha256": "286f2f12ee77d02d0dc14a16fec4be94ff18c4f2343d710d5fe3fc2d34e9bb41",
+    "published": "2021-10-20T04:18:23+00:00",
+    "destination": "/vi/tin-tuc/de-tai-nghien-cuu-trong-nuoc",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/de-tai-cap-co-so.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đề tài cấp cơ sở",
+    "sha256": "4859085add28939b570ebf244b6d524b14b269e391ebc433d1181ac2eda1f27d",
+    "published": "2021-10-20T04:20:52+00:00",
+    "destination": "/vi/tin-tuc/de-tai-nghien-cuu-cap-co-so",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/chuyen-giao-cong-nghe.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Chuyển giao công nghệ",
+    "sha256": "4cba06394d1ebdfceecb79d6c17c304c0f0de141bd3ad6ade05a88c62b2f2b81",
+    "published": "2018-03-08T10:08:13+00:00",
+    "destination": null,
+    "status": "review",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/ng-ta-p-cha-trong-n-a-c.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đăng tạp chí trong nước",
+    "sha256": "83939ac7041f2aa2c47ed66e5b709c1983259d4fe5f5d89367a7baa97d20e40f",
+    "published": "2021-10-20T04:23:04+00:00",
+    "destination": "/vi/tin-tuc/cong-bo-khoa-hoc-trong-nuoc",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/bai-dang-tc-quoc-te.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đăng tạp chí quốc tế",
+    "sha256": "770d6c71c524f0327952eb52900c0323e8cf03664782b1017849c5da8f646c72",
+    "published": "2021-10-14T07:31:07+00:00",
+    "destination": "/vi/tin-tuc/cong-bo-khoa-hoc-quoc-te",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/gia-o-tra-nh-a-xua-t-ba-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Giáo trình đã xuất bản",
+    "sha256": "b10731f0184755c2a61d23d104503cd37e3ca28537e90a62f0e9573898d31fb1",
+    "published": "2021-11-02T16:50:04+00:00",
+    "destination": "/vi/tin-tuc/giao-trinh-da-xuat-ban",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/ba-i-ha-i-tha-o-trong-n-a-c.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Bài hội thảo trong nước",
+    "sha256": "ae1f45a29a95dca44aa22c672dce4f32f76f333207e60d06a36829753fade0d1",
+    "published": "2024-09-18T03:42:22+00:00",
+    "destination": "/vi/tin-tuc/bai-bao-hoi-thao-trong-nuoc",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/nghien-cuu/ba-i-ng-ha-i-tha-o-qua-c-ta.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Bài đăng hội thảo quốc tế",
+    "sha256": "67866d1ec12946440b1164e4fb1b6403385c0d0f4f7e54ff3e6882df576cb61b",
+    "published": "2024-09-18T03:25:35+00:00",
+    "destination": "/vi/tin-tuc/bai-bao-hoi-thao-quoc-te",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Sinh viên",
+    "sha256": "be189c42a943ca233723ad3ad509a39d3ab1613abbef47836a2fcdbf05e3e586",
+    "published": "2021-12-05T04:48:33+00:00",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/hoa-t-a-ng-sinh-via-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hoạt động sinh viên",
+    "sha256": "1804b694aa87fd944219ccb62068ee59f9ab1d10a506a2f3d66934976fbfc191",
+    "published": "2026-09-04T03:38:38+00:00",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Thông báo",
+    "sha256": "a84a5b2ed722106371cdfe1fb3779e49262d4040ea93576bd5cdb963223c2db9",
+    "published": null,
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ma-u-lua-n-v-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Mẫu luận văn",
+    "sha256": "26c952a807e19e65a0e28c06a32aaaeb0f6252943adf9216b97333442b082052",
+    "published": "2021-12-05T04:48:33+00:00",
+    "destination": "/vi/tin-tuc/mau-va-huong-dan-trinh-bay-luan-van",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ca-c-sinh-via-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Cựu sinh viên",
+    "sha256": "68957bf8c9bea8605376e1200ef4de0f5e3ee6ea54ef1990fc34ab8156af2a7a",
+    "published": "2021-10-21T13:29:30+00:00",
+    "destination": "/vi/tin-tuc/mang-luoi-cuu-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ca-c-sinh-via-n/alumni-network-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Mạng lưới cựu sinh viên",
+    "sha256": "0feac2a2909adb997fd94d4f44cd7b6d5cff3115128a2d268d1dd1b228988065",
+    "published": "2021-10-20T03:45:23+00:00",
+    "destination": "/vi/tin-tuc/mang-luoi-cuu-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ca-c-sinh-via-n/ha-tra-sinh-vien.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hỗ trợ sinh viên",
+    "sha256": "a2e6a861c68c9529d0593ffa2013883223d8640ca3bc3ec86d64a3496fb3e2a8",
+    "published": "2021-10-21T13:29:30+00:00",
+    "destination": "/vi/tin-tuc/cuu-sinh-vien-dong-hanh-cung-nguoi-hoc",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ca-c-sinh-via-n/hoa-t-a-ng-xa-ha-i.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hoạt động xã hội",
+    "sha256": "d1cfd7e9c90c206233f1bd0fdc281c8899a7ede9b2c57bfbacad3540453798cf",
+    "published": "2021-10-21T13:22:39+00:00",
+    "destination": "/vi/tin-tuc/hoat-dong-cong-dong-cua-cuu-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/nghia-n-ca-u-khoa-ha-c-sinh-via-n.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Nghiên cứu khoa học sinh viên",
+    "sha256": "841fcd6c2693bbbeea7cbe78db4a5d0c82c6333f070330ea57520b649305d8ab",
+    "published": "2024-10-18T09:12:20+00:00",
+    "destination": "/vi/tin-tuc/nghien-cuu-khoa-hoc-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/xuat-ban-nckh-sinh-via-n-ql.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Xuat ban NCKH sinh viên QLĐĐ",
+    "sha256": "d9a8661353cd0a70d7829a015f5b9a49a47b55fa440154d5992c19d959fc27b7",
+    "published": "2024-10-18T09:12:20+00:00",
+    "destination": "/vi/tin-tuc/nghien-cuu-khoa-hoc-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/ga-p-a-pha-n-ha-i.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Góp ý - phản hồi",
+    "sha256": "90aa587d255ef217e31966eca9ebf095397e1d3ee2d4321f4d1aaa1675fd1863",
+    "published": "2024-10-18T09:34:12+00:00",
+    "destination": "/vi/tin-tuc/gop-y-va-phan-hoi-cua-sinh-vien",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hội thảo",
+    "sha256": "aa606d079257112165ad13bff5e35c37db27fa64a7d72f22c71a7f81302ce7c8",
+    "published": null,
+    "destination": "/vi/tin-tuc?category=SU_KIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao/ht-qldd-2019.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hội thảo QLĐĐ 2019",
+    "sha256": "a3a3a411d8cde2b470d506d5f5f2868eee96bda72f3b3185739f6f2439dee035",
+    "published": "2021-10-14T06:43:43+00:00",
+    "destination": "/vi/tin-tuc/hoi-thao-quan-ly-dat-dai-2019",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao/acrs-2021.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Remote Sensing - ACRS 2021",
+    "sha256": "7997a2f55e24c1ab28897eb8e582186523347ee253aec497d241360f5e16dc3e",
+    "published": "2021-10-30T16:25:20+00:00",
+    "destination": "/vi/tin-tuc/hoi-thao-vien-tham-chau-a-acrs-2021",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao/ht-cn40-tndd-2021.html",
+    "title": "",
+    "sha256": null,
+    "published": null,
+    "destination": null,
+    "status": "review",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao/ht-khd-qldd-2020.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hội thảo KHD&QLĐĐ 2020",
+    "sha256": "df168c489803dfd9bec47175db610001a55f913c59472b44978b0dee8718652c",
+    "published": "2021-10-14T06:44:40+00:00",
+    "destination": "/vi/tin-tuc/hoi-thao-khoa-hoc-dat-va-quan-ly-dat-dai-2020",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoi-thao/ht-gisideas-2018.html",
+    "title": "Bộ môn Tài nguyên Đất đai - GIS IDEAS 2018",
+    "sha256": "3e6b8aa24e2c06e5ede7a55fba1f5a7cdbeb630ce20192bb7adb74fcc5baf2f5",
+    "published": "2021-10-14T06:42:08+00:00",
+    "destination": "/vi/tin-tuc/hoi-thao-gis-ideas-2018",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/tuya-n-sinh.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh",
+    "sha256": "f179a7b967034a87887b3197c2a8042f36b8a73403c9c26d817d4b5989d48a99",
+    "published": "2026-07-20T00:00:33+00:00",
+    "destination": "/vi/tuyen-sinh",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-i-tha-o-icggs-2023.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hội thảo ICGGS 2023",
+    "sha256": "9ded068fb1aec410e24f6ed9eaef4cb71439ac94a2febf3eba2268e4db74a1ce",
+    "published": "2022-09-05T02:25:48+00:00",
+    "destination": "/vi/tin-tuc/hoi-thao-icggs-2023-tai-dai-hoc-can-tho",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Học bổng - Việc làm",
+    "sha256": "7f3c29b1641eed6fcbc42c2454e099d970d68dd342d6c5983dabb31a206dfe03",
+    "published": "2024-10-03T09:24:38+00:00",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/ha-c-ba-ng.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Học bổng",
+    "sha256": "7b3275fd6fb692a430fd36081e8e02313c413790441cc2bfa8fa88195153c07c",
+    "published": "2024-10-03T09:24:38+00:00",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Thông tin việc làm",
+    "sha256": "7587eafa758579d33f3d65a242fd6b727dbb22c326409052a06042d088760c9c",
+    "published": "2026-09-15T09:13:09+00:00",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hoạt động",
+    "sha256": "ba8c580e2fab23fe773423db67a41ee78429a2e8944dd05ab7603d72fa9dfbbb",
+    "published": "2026-09-04T03:04:32+00:00",
+    "destination": "/vi/tin-tuc",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/tuya-n-sinh/132-quy-hoach-vung-do-thi.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh ngành Quy hoạch vùng và Đô thị 2026",
+    "sha256": "c4f047ae7b01835f28f9b894c4362e62ebcb336b32257abfc0554999cfcbcf92",
+    "published": null,
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-quy-hoach-vung-va-do-thi-2026",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/tuya-n-sinh/130-tien-si-qldd-2025-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh Tiến sĩ Quản lý Đất đai năm 2026 - Đợt 2",
+    "sha256": "c1bc14662c3d8a64f15ff79041c8d4cffbaaff8673cd0a67ec85b6ed3dc143c1",
+    "published": "2026-07-20T00:00:33+00:00",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-tien-si-quan-ly-dat-dai-2026-dot-2",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/tuya-n-sinh/168-thac-si-qldd-2025-2.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh Thạc sĩ Quản lý Đất đai năm 2026 - Đợt 2",
+    "sha256": "8c9f58b3af8d3c7f0d2b34dac4709045eb0185cce42e425af2cfe25772d58801",
+    "published": "2026-07-17T00:00:33+00:00",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-thac-si-quan-ly-dat-dai-2026-dot-2",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/tuya-n-sinh/124-ts-quan-ly-dat-dai.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh đại học Quản lý Đất đai năm 2026",
+    "sha256": "f927d2f49b75ce7ff5b76143c9275e8a5128f551b98abc1164e9158de04ca5ff",
+    "published": "2026-03-18T00:00:33+00:00",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-quan-ly-dat-dai-2026",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/hoa-t-a-ng-sinh-via-n/171-trao-d-i-sinh-vien-t-i-d-i-h-c-srinakharinwirot-thai-lan-nam-2026.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Trao đổi sinh viên tại Đại học Srinakharinwirot – 2026",
+    "sha256": "b3b2cf416f5e67da74c3b69af7b4135bda3211b76c42b130c38356c9bbd7c5a0",
+    "published": "2026-09-04T03:38:38+00:00",
+    "destination": "/vi/tin-tuc/sinh-vien-trao-doi-hoc-tap-tai-thai-lan-nam-2026",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/hoa-t-a-ng-sinh-via-n/141-chuong-trinh-trao-d-i-sinh-vien-nu-c-ngoai.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Chương trình trao đổi sinh viên nước ngoài",
+    "sha256": "28e7b7b3931096c7c9aaf0222feb8fbc57f91dc9a5b0c8ed6abfa90f5dc06a5a",
+    "published": "2024-10-04T01:52:13+00:00",
+    "destination": "/vi/tin-tuc/chuong-trinh-trao-doi-sinh-vien-quoc-te",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/hoa-t-a-ng-sinh-via-n/103-ho-t-d-ng-sinh-vien.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hoạt động sinh viên",
+    "sha256": "31311f04e2ace8ba97a66791507d32a62a516cdb41f9a6a8188d430361666251",
+    "published": "2021-12-05T04:28:25+00:00",
+    "destination": null,
+    "status": "review",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/126-b-o-v-lu-n-an-ti-n-si-c-p-tru-ng-ncs-nguy-n-minh-thong.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Bảo vệ luận án tiến sĩ cấp trường, NCS Nguyễn Minh Thông",
+    "sha256": "48d88f23ef5706fa70d24725d457e142624953da830b7f49a4c3b1546a41504b",
+    "published": "2022-09-05T02:21:57+00:00",
+    "destination": "/vi/tin-tuc/bao-ve-luan-an-cua-ncs-nguyen-minh-thong-nam-2022",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/120-phat-b-ng-th-c-si-ti-n-si.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Phát bằng Thạc sĩ, Tiến sĩ Quản lý đất đai 2022",
+    "sha256": "b26e1ac76fc065bf88c5d8633a9046ddbe804a3ea6dffe271b0dd5e0e0563076",
+    "published": "2022-03-27T17:08:39+00:00",
+    "destination": "/vi/tin-tuc/trao-bang-sau-dai-hoc-nganh-quan-ly-dat-dai-nam-2022",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/117-ke-hoa-ch-lvtn-21-22.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Kế hoạch khung thực hiện luận văn tốt nghiệp học kỳ 2, 2021-2022",
+    "sha256": "cb224d11835fb3f2ad53729633a45660f22379150ec115fe61f9bce94fafe83e",
+    "published": "2022-01-06T02:31:56+00:00",
+    "destination": null,
+    "status": "review",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/125-ke-hoa-ch-lvtn-21-23.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Kế hoạch khung thực hiện luận văn tốt nghiệp học kỳ 1, 2022-2023",
+    "sha256": "404d997236d09e58eba1bc739d7fe385c60ce61854419f7a42e74fad495fb899",
+    "published": "2022-01-06T02:31:56+00:00",
+    "destination": "/vi/tin-tuc/ke-hoach-luan-van-hoc-ky-1-nam-hoc-2022-2023",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/116-lvtn-hk2-21-22.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Thông báo đăng ký LVTN học kỳ 2 2021-2022",
+    "sha256": "4bfc65e5da8753e09d45a59c6f5bc75433e31405d4dd0402c3e2175bcbd4a809",
+    "published": "2022-01-06T02:24:56+00:00",
+    "destination": "/vi/tin-tuc/thong-bao-luan-van-hoc-ky-2-nam-hoc-2021-2022",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/111-ki-m-d-nh-ch-t-lu-ng-aun-qa-nganh-qldd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Kiểm định chất lượng AUN-QA ngành QLĐĐ",
+    "sha256": "414a7571c8f586061be7ed97d9704f23940c2c234f36c18fa538e65e503473b8",
+    "published": "2022-01-06T01:50:26+00:00",
+    "destination": null,
+    "status": "review",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/108-k-ho-ch-gi-ng-d-y-h-c-ky-2-2021-2022.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Kế hoạch giảng dạy học kỳ 2 (2021-2022)",
+    "sha256": "863f9f4096fa1feda0d285012dddcc27ff3f3d80254848df38b73e45deea06f6",
+    "published": "2021-12-05T05:06:56+00:00",
+    "destination": "/vi/tin-tuc/ke-hoach-giang-day-hoc-ky-2-nam-hoc-2021-2022",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/107-l-ch-thi-h-c-ky-1-2021-2021.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Lịch thi học kỳ 1 (2021-2021)",
+    "sha256": "7c485cee98bdf850905d4405d1224ad492326a7ed86f79f05a58593f1e873751",
+    "published": "2021-12-05T04:56:31+00:00",
+    "destination": "/vi/tin-tuc/lich-thi-hoc-ky-1-thong-bao-luu-tru-nam-2021",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/105-l-ch-bao-cao-lu-n-van-h-c-ky-1-2021-2022.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Lịch báo cáo luận văn học kỳ 1 - 2021-2022",
+    "sha256": "2bf323e764cbbfaae31faa8542915ed9f499d23e5e2823b576c1035718a26d85",
+    "published": "2021-12-05T04:38:39+00:00",
+    "destination": "/vi/tin-tuc/lich-bao-cao-luan-van-hoc-ky-1-nam-hoc-2021-2022",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/sinh-via-n/thong-tin/88-hop-mat-ky-niem-ngay-truyen-thong-nganh-qldd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Họp mặt kỷ niệm ngày truyền thống ngành Quản lý Đất đai",
+    "sha256": "a676b671f12d78b07abb0a8822c22c3fc0ad9b41f364d3cde48bbaf3bdec35f1",
+    "published": "2021-10-20T10:20:39+00:00",
+    "destination": "/vi/tin-tuc/hop-mat-ngay-truyen-thong-nganh-nam-2021",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/139-h-c-b-ng-c-u-sv-qu-n-ly-d-t-dai-2024-k-ni-m-thanh-l-p-nganh-qldd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Học bổng Cựu SV Quản lý đất đai 2024 - Kỷ niệm thành lập ngành QLĐĐ",
+    "sha256": "76a9a5d14e82e38b77c83777ef6c471f2b3da239a12102146d799d16f866ace6",
+    "published": "2024-10-03T09:24:38+00:00",
+    "destination": "/vi/tin-tuc/hoc-bong-cuu-sinh-vien-dip-ky-niem-nganh-nam-2024",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/138-hocbong-cuu-sv-qldd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Học bổng Cựu SV Quản lý đất đai - Đón tân SV 2024",
+    "sha256": "2a075b257029c44bc5e0297e2094600031151045b38cebaaea765f0b53291482",
+    "published": "2024-10-03T09:03:54+00:00",
+    "destination": "/vi/tin-tuc/hoc-bong-don-tan-sinh-vien-nam-2024",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/173-tuy-n-d-ng-h-th-ng-chi-nhanh-vpdkdd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng - Hệ thống Chi nhánh VPĐKĐĐ",
+    "sha256": "7a22bb7f6aa64c90f40b6415eb067237268ea99f9c5c7652d27395abeaa8d939",
+    "published": "2026-09-15T09:13:09+00:00",
+    "destination": "/vi/tin-tuc/co-hoi-viec-lam-tai-chi-nhanh-van-phong-dang-ky-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/172-tuy-n-d-ng-cty-cptv-dtpt-an-giang.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng - Cty CPTV&ĐTPT An Giang",
+    "sha256": "421ed8eeea7bf2259a545fd2799460af7114aca5ff7d3373bcf0a3f68f12b837",
+    "published": "2026-09-04T08:16:56+00:00",
+    "destination": "/vi/tin-tuc/tuyen-dung-ky-su-tai-don-vi-tu-van-an-giang",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/155-tuy-n-d-ng-cong-ty-tnhh-tu-v-n-do-d-c-di-n-th-nh.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng - Công ty Điền Thịnh",
+    "sha256": "55d1b64f573d2942198eee3afd8aab725f21b0246a3b06ca6d714dfd28b4ece2",
+    "published": "2026-05-19T02:22:26+00:00",
+    "destination": "/vi/tin-tuc/tuyen-dung-tai-cong-ty-do-dac-dien-thinh",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/164-tuy-n-sinh-vien-th-c-t-p-t-i-ubnd-xa-phu-qu-i.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển sinh viên thực tập tại UBND xã Phú Quới",
+    "sha256": "181ff55b6303eac495345b461bcc8d53a4559815d51d502a55db61a362a07d8c",
+    "published": "2026-06-08T00:45:16+00:00",
+    "destination": "/vi/tin-tuc/co-hoi-thuc-tap-tai-ubnd-xa-phu-quoi",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/152-tuy-n-d-ng-cong-ty-vdcd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng - Công ty VDCD",
+    "sha256": "f9486d2ae10f94d1de31a24a07443f80c14478ba1d3d2331bb540c9ef8ea4d4d",
+    "published": "2026-04-22T03:20:37+00:00",
+    "destination": "/vi/tin-tuc/co-hoi-ky-thuat-trac-dia-tai-vdcd",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/149-tuy-n-d-ng-cong-ty-tnhh-do-d-c-dong-h-i.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng - Công ty TNHH Đo đạc Đông Hải",
+    "sha256": "9c0fa7e4b4f5754c424ea5c00df210759e05c491aec2ed9f1bdb98d03072ca39",
+    "published": "2026-03-23T02:50:59+00:00",
+    "destination": "/vi/tin-tuc/tuyen-dung-tai-cong-ty-do-dac-dong-hai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/131-tuyen-d-ng-k-su-do-d-c.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tuyển dụng kỹ sư đo đạc 2024",
+    "sha256": "8f97211a40f22440901b4ee2a7eb9b026c421b2ad1ea6a63a1094f6451e5f1f1",
+    "published": "2024-12-06T09:10:26+00:00",
+    "destination": "/vi/tin-tuc/thong-bao-tuyen-ky-su-do-dac-nam-2024",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng/170-k-ni-m-81-nam-ngay-truy-n-th-ng-nganh-qu-n-ly-d-t-dai-vi-t-nam.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Hướng tới kỷ niệm 81 năm Ngày truyền thống ngành Quản lý đất đai Việt Nam",
+    "sha256": "5350e45ab8afb96c6da305ae6f1de066fb3dda3c2d5f6413cc19cbf2a648c2ef",
+    "published": "2026-09-04T03:04:32+00:00",
+    "destination": "/vi/tin-tuc/ky-niem-81-nam-ngay-truyen-thong-nganh-quan-ly-dat-dai",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng/169-b-mon-tai-nguyen-d-t-dai-tham-gia-h-i-th-o-khoa-h-c-qu-n-ly-d-t-dai-toan-qu-c-l-n-th-iv.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Bộ môn Tài nguyên Đất đai tham gia Hội thảo khoa học Quản lý đất đai toàn quốc lần thứ IV",
+    "sha256": "b6c7ca149da0b9aae04864346339da2a84e15aff084df5095c301add492b23a7",
+    "published": "2026-07-20T03:30:48+00:00",
+    "destination": "/vi/tin-tuc/bo-mon-tham-gia-hoi-thao-quan-ly-dat-dai-toan-quoc-2026",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng/142-k-ni-m-79-nam-ngay-thanh-l-p-nganh-qldd.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Kỷ niệm 79 năm ngày thành lập ngành Quản lý Đất đai",
+    "sha256": "aaa7c9c09dd0c6a1b3c6d8ca51ea1b57db8d44b2413c79c127ed6130372eb15d",
+    "published": "2024-10-04T03:23:36+00:00",
+    "destination": "/vi/tin-tuc/ky-niem-ngay-truyen-thong-nganh-nam-2024",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng/150-tu-v-n-tuy-n-sinh-bao-tu-i-tr-2026.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Tư vấn tuyển sinh tại Đại học Cần Thơ - Báo tuổi trẻ 2026",
+    "sha256": "6d614bab11775548386a8c49b89c3dae604cf86cce5635c89ade89e05dc0e469",
+    "published": "2026-03-26T15:00:19+00:00",
+    "destination": "/vi/tin-tuc/tu-van-tuyen-sinh-tai-dai-hoc-can-tho-nam-2026",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  },
+  {
+    "url": "https://lrd.ctu.edu.vn/hoa-t-a-ng/140-don-tan-sinh-vien-k50-nganh-qu-n-ly-d-t-dai-va-quy-ho-ch-vung-va-do-th.html",
+    "title": "Bộ môn Tài nguyên Đất đai - Đón tân sinh viên K50 ngành Quản lý đất đai và Quy hoạch vùng và Đô thị",
+    "sha256": "44f5826c9aac00f45db5ebc7bd3b85db953cbc5148c0a55aaf1a16818450d70f",
+    "published": "2024-10-03T09:36:44+00:00",
+    "destination": "/vi/tin-tuc/chao-don-tan-sinh-vien-khoa-50",
+    "status": "mapped",
+    "retrievedOn": "2026-10-15"
+  }
+]
