@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "kicker": "TRI THỨC GẮN VỚI THỰC TIỄN",
+    "title": "Hiểu đất đai.\nKiến tạo tương lai.",
+    "body": "Học tập và nghiên cứu vì sự phát triển bền vững của tài nguyên, con người và cộng đồng.",
+    "action": {"label":"Khám phá ngành học","link":{"kind":"ANCHOR","target":"dao-tao"}}
+  },
+  "heroImageId": null,
+  "heroImageAlt": "Khuôn viên Khoa Môi trường và Tài nguyên thiên nhiên, Đại học Cần Thơ",
+  "introduction": {
+    "kicker": "BỘ MÔN TÀI NGUYÊN ĐẤT ĐAI",
+    "title": "Từ tri thức nền tảng\nđến giá trị thực tiễn.",
+    "body": "Chúng tôi kết nối đào tạo, nghiên cứu và ứng dụng trong quản lý đất đai, quy hoạch vùng và đô thị. Môi trường học tập gắn liền với những vấn đề thực tế của Đồng bằng sông Cửu Long.",
+    "action":{"label":"Tìm hiểu về bộ môn","link":{"kind":"EXTERNAL","target":"https://lrd.ctu.edu.vn/"}}
+  },
+  "programsKicker":"HÀNH TRÌNH HỌC TẬP",
+  "programsTitle":"Chọn lĩnh vực. Mở tương lai.",
+  "programsAction":{"label":"Thông tin tuyển sinh","link":{"kind":"EXTERNAL","target":"https://tuyensinh.ctu.edu.vn/"}},
+  "programs":[
+    {"id":"92009042-7913-4267-a89a-1a3e2acfeaa1","kicker":"TÀI NGUYÊN & PHÁT TRIỂN","title":"Quản lý đất đai","body":"Kiến thức về quản lý, khai thác và sử dụng tài nguyên đất đai theo hướng bền vững.","action":{"label":"Khám phá chương trình","link":{"kind":"EXTERNAL","target":"https://lrd.ctu.edu.vn/dao-tao-2/quan-ly-dat-dai-2.html"}}},
+    {"id":"92009042-7913-4267-a89a-1a3e2acfeaa2","kicker":"KHÔNG GIAN & CỘNG ĐỒNG","title":"Quy hoạch vùng và đô thị","body":"Tư duy quy hoạch và thiết kế không gian để đáp ứng nhu cầu phát triển của địa phương.","action":{"label":"Khám phá chương trình","link":{"kind":"EXTERNAL","target":"https://lrd.ctu.edu.vn/dao-tao-2/a-i-ha-c-quy-hoa-ch-va-ng-va-a-tha.html"}}}
+  ],
+  "newsKicker":"KẾT NỐI VỚI BỘ MÔN",
+  "newsTitle":"Tin tức & hoạt động",
+  "newsCategory":"",
+  "newsLimit":3,
+  "featuredIds":[],
+  "contact":{"kicker":"CÙNG NHAU PHÁT TRIỂN","title":"Bạn đang tìm kiếm thông tin?","body":"Kết nối với bộ môn để được hỗ trợ về học tập và nghiên cứu.","action":{"label":"Liên hệ bộ môn","link":{"kind":"ANCHOR","target":"lien-he"}}},
+  "sections":["INTRODUCTION","PROGRAMS","NEWS","CONTACT"],
+  "footer":{"description":"Tri thức hôm nay.\nGiá trị bền vững cho ngày mai.","address":"Khu 2, đường 3 tháng 2, phường Ninh Kiều, TP. Cần Thơ","email":"ptvu@ctu.edu.vn"}
+}

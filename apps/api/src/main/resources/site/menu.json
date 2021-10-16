@@ -1,0 +1,7 @@
+{"items":[
+  {"id":"aa609042-7913-4267-a89a-1a3e2acfeaa1","label":"Giới thiệu","link":{"kind":"ANCHOR","target":"gioi-thieu"},"children":[]},
+  {"id":"aa609042-7913-4267-a89a-1a3e2acfeaa2","label":"Đào tạo","link":{"kind":"ANCHOR","target":"dao-tao"},"children":[]},
+  {"id":"aa609042-7913-4267-a89a-1a3e2acfeaa3","label":"Nghiên cứu","link":{"kind":"CATEGORY","target":"NGHIEN_CUU"},"children":[]},
+  {"id":"aa609042-7913-4267-a89a-1a3e2acfeaa4","label":"Tin tức","link":{"kind":"NEWS","target":""},"children":[]},
+  {"id":"aa609042-7913-4267-a89a-1a3e2acfeaa5","label":"Tuyển sinh","link":{"kind":"EXTERNAL","target":"https://tuyensinh.ctu.edu.vn/"},"children":[]}
+]}
