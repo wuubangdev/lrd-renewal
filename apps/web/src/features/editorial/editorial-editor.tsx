@@ -1,6 +1,7 @@
 "use client";
+import { useUnsavedChanges } from "@/components/unsaved-changes";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ArrowLeft, ArrowRight, ImagePlus, Plus, Save, Search, Send, Trash2 } from "lucide-react";
 import { api, matchVersion } from "@/lib/browser-api";
 import { EnglishVersionButton } from "@/features/localization/english-version-button";
@@ -59,13 +60,7 @@ export function EditorialEditor({ initial }: { initial: EditorialItem }) {
   const eventCreateFlow = item.kind === "EVENT" && initial.version === 0 && !item.live;
   const dirty = JSON.stringify(draft) !== JSON.stringify(item.draft);
   const kindName = editorialLabels[item.kind];
-  useEffect(() => {
-    const protect = (event: BeforeUnloadEvent) => {
-      if (dirty) event.preventDefault();
-    };
-    window.addEventListener("beforeunload", protect);
-    return () => window.removeEventListener("beforeunload", protect);
-  }, [dirty]);
+  useUnsavedChanges(dirty);
   function change<K extends keyof EditorialDetails>(key: K, value: EditorialDetails[K]) {
     setDraft((d) => ({ ...d, [key]: value }));
     setNotice("");
@@ -93,11 +88,16 @@ export function EditorialEditor({ initial }: { initial: EditorialItem }) {
     return next;
   }
   async function run(action: "save" | "publish" | "withdraw") {
+    if (
+      action === "withdraw" &&
+      !window.confirm("Gỡ hồ sơ khỏi website? Phần đang nhập chưa lưu sẽ được giữ tại đây.")
+    )
+      return;
     setBusy(true);
     setError("");
     setNotice("");
     try {
-      const current = await save();
+      const current = action === "withdraw" ? item : await save();
       if (action === "save") setNotice("Đã lưu bản nháp.");
       if (action === "publish") {
         const next = await api<EditorialItem>(`/admin/editorial/${item.id}/publish`, {
@@ -163,7 +163,7 @@ export function EditorialEditor({ initial }: { initial: EditorialItem }) {
               disabled={busy || !draft.title.trim() || !draft.articleId}
               onClick={() => run("publish")}
             >
-              <Send size={16} /> Đăng công khai
+              <Send size={16} /> {item.live ? "Cập nhật công khai" : "Đăng công khai"}
             </button>
           )}
         </div>

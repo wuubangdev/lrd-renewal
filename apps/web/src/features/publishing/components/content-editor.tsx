@@ -1,4 +1,5 @@
 "use client";
+import { useUnsavedChanges } from "@/components/unsaved-changes";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -142,29 +143,11 @@ export function ContentEditor({ initial }: { initial: AdminContent }) {
     return task;
   }, [initial.id]);
   useEffect(() => {
-    const shortcut = (event: KeyboardEvent) => {
-      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "s") {
-        event.preventDefault();
-        if (!busy && !conflict) void save().catch(() => undefined);
-      }
-    };
-    window.addEventListener("keydown", shortcut);
-    return () => window.removeEventListener("keydown", shortcut);
-  }, [save, busy, conflict]);
-  useEffect(() => {
     if (saveState !== "changed" || busy || conflict) return;
     const timer = setTimeout(() => void save().catch(() => undefined), 1500);
     return () => clearTimeout(timer);
   }, [draft, saveState, busy, conflict, save]);
-  useEffect(() => {
-    const protect = (event: BeforeUnloadEvent) => {
-      if (saved.current !== JSON.stringify(current.current)) {
-        event.preventDefault();
-      }
-    };
-    window.addEventListener("beforeunload", protect);
-    return () => window.removeEventListener("beforeunload", protect);
-  }, []);
+  useUnsavedChanges(saved.current !== JSON.stringify(current.current));
   async function flush() {
     let result = await save();
     while (saved.current !== JSON.stringify(current.current)) result = await save();
@@ -213,7 +196,8 @@ export function ContentEditor({ initial }: { initial: AdminContent }) {
     if (!window.confirm("Gỡ bài khỏi website? Bản nháp và lịch sử đăng vẫn được giữ lại.")) return;
     setBusy(true);
     try {
-      const persisted = await flush();
+      await queue.current.catch(() => undefined);
+      const persisted = latest.current;
       const result = await api<AdminContent>("/admin/content/" + entry.id + "/withdraw", {
         method: "POST",
         headers: matchVersion(persisted.version),

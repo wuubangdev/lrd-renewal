@@ -1,6 +1,7 @@
 "use client";
+import { useUnsavedChanges } from "@/components/unsaved-changes";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ArrowLeft, ArrowRight, Eye, ImagePlus, Plus, Save, Send, Trash2 } from "lucide-react";
 import { api, matchVersion } from "@/lib/browser-api";
 import { EnglishVersionButton } from "@/features/localization/english-version-button";
@@ -135,13 +136,7 @@ export function StaffEditor({ initial }: { initial: StaffProfile }) {
   const [notice, setNotice] = useState("");
   const createFlow = initial.version === 0 && !profile.live;
   const dirty = JSON.stringify(draft) !== JSON.stringify(profile.draft);
-  useEffect(() => {
-    const protect = (event: BeforeUnloadEvent) => {
-      if (dirty) event.preventDefault();
-    };
-    window.addEventListener("beforeunload", protect);
-    return () => window.removeEventListener("beforeunload", protect);
-  }, [dirty]);
+  useUnsavedChanges(dirty);
   function change<K extends keyof StaffDetails>(key: K, value: StaffDetails[K]) {
     setDraft((current) => ({ ...current, [key]: value }));
     setNotice("");

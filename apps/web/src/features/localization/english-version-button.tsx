@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useConfirmNavigation } from "@/components/unsaved-changes";
 import { Languages, ExternalLink } from "lucide-react";
 import {
   englishEditorPath,
@@ -24,6 +25,7 @@ export function EnglishVersionButton({
   sourceReady?: boolean;
 }) {
   const router = useRouter();
+  const confirmNavigation = useConfirmNavigation();
   const [targetId, setTargetId] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -54,6 +56,7 @@ export function EnglishVersionButton({
     try {
       const result = await generateEnglishVersion(kind, sourceId, replace);
       setTargetId(result.id);
+      if (!confirmNavigation()) return;
       router.push(result.href);
       router.refresh();
     } catch (cause) {

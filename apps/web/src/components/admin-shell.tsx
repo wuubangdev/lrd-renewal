@@ -25,6 +25,7 @@ import { useEffect, useRef, useState } from "react";
 import type { SessionUser } from "@/lib/contracts";
 import { api } from "@/lib/browser-api";
 import { Brand } from "./brand";
+import { UnsavedChangesProvider, useConfirmNavigation } from "./unsaved-changes";
 
 const navigation = [
   {
@@ -112,6 +113,15 @@ const navigation = [
 ];
 
 export function AdminShell({ user, children }: { user: SessionUser; children: React.ReactNode }) {
+  return (
+    <UnsavedChangesProvider>
+      <AdminWorkspace user={user}>{children}</AdminWorkspace>
+    </UnsavedChangesProvider>
+  );
+}
+
+function AdminWorkspace({ user, children }: { user: SessionUser; children: React.ReactNode }) {
+  const confirmNavigation = useConfirmNavigation();
   const pathname = usePathname(),
     router = useRouter();
   const searchParams = useSearchParams();
@@ -145,6 +155,7 @@ export function AdminShell({ user, children }: { user: SessionUser; children: Re
     return () => window.removeEventListener("keydown", saveShortcut);
   }, []);
   async function logout() {
+    if (!confirmNavigation()) return;
     try {
       await api("/auth/logout", { method: "POST" });
       router.replace("/admin/login");

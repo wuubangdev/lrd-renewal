@@ -1,5 +1,7 @@
 "use client";
+import { useUnsavedChanges, useConfirmNavigation } from "@/components/unsaved-changes";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Save, Eye, History, Upload, Download, ExternalLink } from "lucide-react";
 import { api, matchVersion } from "@/lib/browser-api";
@@ -17,6 +19,8 @@ import type {
 } from "./contracts";
 
 export function SiteEditor({ initial }: { initial: SiteView }) {
+  const router = useRouter();
+  const confirmNavigation = useConfirmNavigation();
   const [view, setView] = useState(initial),
     [content, setContent] = useState(initial.content);
   const [dirty, setDirty] = useState(false),
@@ -31,16 +35,7 @@ export function SiteEditor({ initial }: { initial: SiteView }) {
     base = "/admin/site/" + kind,
     query = "?locale=" + view.locale;
   useEffect(() => setReady(true), []);
-  useEffect(() => {
-    function handler(e: BeforeUnloadEvent) {
-      if (dirty) {
-        e.preventDefault();
-        e.returnValue = "";
-      }
-    }
-    window.addEventListener("beforeunload", handler);
-    return () => window.removeEventListener("beforeunload", handler);
-  }, [dirty]);
+  useUnsavedChanges(dirty);
   function change(value: SiteContent) {
     setContent(value);
     setDirty(true);
@@ -145,11 +140,7 @@ export function SiteEditor({ initial }: { initial: SiteView }) {
               value={view.locale}
               disabled={busy}
               onChange={(e) => {
-                if (
-                  !dirty ||
-                  window.confirm("Bạn có thay đổi chưa lưu. Rời trang và bỏ các thay đổi này?")
-                )
-                  window.location.href = base + "?locale=" + e.target.value;
+                if (confirmNavigation()) router.push(base + "?locale=" + e.target.value);
               }}
             >
               <option value="vi">Tiếng Việt</option>

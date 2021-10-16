@@ -1,11 +1,11 @@
 "use client";
+import { useUnsavedChanges } from "@/components/unsaved-changes";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ArrowLeft, ImagePlus, Plus, Save, Send, Trash2 } from "lucide-react";
 import { api, matchVersion } from "@/lib/browser-api";
 import { EnglishVersionButton } from "@/features/localization/english-version-button";
 import { MediaPicker } from "@/features/media/media-picker";
-import type { PublicStaff } from "@/features/directory/contracts";
 import {
   researchDetailPath,
   researchLabels,
@@ -48,7 +48,7 @@ export function ResearchEditor({
   people,
 }: {
   initial: ResearchRecord;
-  people: PublicStaff[];
+  people: { id: string; name: string; published: boolean }[];
 }) {
   const [record, setRecord] = useState(initial),
     [draft, setDraft] = useState(initial.draft),
@@ -57,13 +57,7 @@ export function ResearchEditor({
     [error, setError] = useState(""),
     [notice, setNotice] = useState("");
   const dirty = JSON.stringify(draft) !== JSON.stringify(record.draft);
-  useEffect(() => {
-    const guard = (e: BeforeUnloadEvent) => {
-      if (dirty) e.preventDefault();
-    };
-    window.addEventListener("beforeunload", guard);
-    return () => window.removeEventListener("beforeunload", guard);
-  }, [dirty]);
+  useUnsavedChanges(dirty);
   function change<K extends keyof ResearchDetails>(key: K, value: ResearchDetails[K]) {
     setDraft((d) => ({ ...d, [key]: value }));
     setNotice("");
@@ -86,11 +80,16 @@ export function ResearchEditor({
     return next;
   }
   async function run(action: "save" | "publish" | "withdraw") {
+    if (
+      action === "withdraw" &&
+      !window.confirm("Gỡ công trình khỏi website? Phần đang nhập chưa lưu sẽ được giữ tại đây.")
+    )
+      return;
     setBusy(true);
     setError("");
     setNotice("");
     try {
-      const current = await save();
+      const current = action === "withdraw" ? record : await save();
       if (action === "save") setNotice("Đã lưu bản nháp.");
       if (action === "publish") {
         const next = await api<ResearchRecord>(`/admin/research/${record.id}/publish`, {
@@ -155,7 +154,7 @@ export function ResearchEditor({
             disabled={busy || draft.title.trim().length < 4}
             onClick={() => run("publish")}
           >
-            <Send size={16} /> Đăng công khai
+            <Send size={16} /> {record.live ? "Cập nhật công khai" : "Đăng công khai"}
           </button>
         </div>
       </header>
@@ -305,14 +304,15 @@ export function ResearchEditor({
                             author(i, {
                               ...a,
                               staffId: p?.id ?? null,
-                              name: p?.details.name ?? a.name,
+                              name: p?.name ?? a.name,
                             });
                           }}
                         >
                           <option value="">Tác giả ngoài danh sách</option>
                           {people.map((p) => (
                             <option value={p.id} key={p.id}>
-                              {p.details.name}
+                              {p.name || "Chưa đặt tên"}
+                              {p.published ? "" : " (bản nháp)"}
                             </option>
                           ))}
                         </select>
