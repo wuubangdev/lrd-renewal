@@ -38,13 +38,9 @@ public class SessionAccountFilter extends OncePerRequestFilter {
                             > 8 * 60 * 60 * 1000L) {
                 if (session != null) session.invalidate();
                 SecurityContextHolder.clearContext();
-                response.setStatus(401);
-                response.setContentType("application/problem+json");
-                response.getWriter()
-                        .write(
-                                "{\"status\":401,\"code\":\"UNAUTHORIZED\",\"detail\":\"Phiên đăng"
-                                        + " nhập đã kết thúc.\"}");
-                return;
+                contexts.saveContext(SecurityContextHolder.createEmptyContext(), request, response);
+                // Authorization still rejects protected routes. Public content and a fresh
+                // CSRF/login flow must remain available after an old session is invalidated.
             }
         }
         chain.doFilter(request, response);
