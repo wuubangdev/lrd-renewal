@@ -48,4 +48,22 @@ class EnglishTranslationServiceTest {
         assertEquals("EN: Nghiên cứu đất đai", translated.get("summary"));
         assertEquals("person@ctu.edu.vn", translated.get("email"));
     }
+
+    @Test
+    void excludesPrivateSubtreesAndMachineAttributesFromAiRequests() {
+        var source = Map.<String, Object>of("summary", "Nghiên cứu đất đai",
+                "sourceArticleId", UUID.randomUUID().toString(),
+                "privateFacts", List.of(Map.of("label", "Địa chỉ riêng", "value", "Không gửi ra ngoài")),
+                "document", Map.of("type", "doc", "content", List.of(Map.of("type", "paragraph",
+                        "attrs", Map.of("textAlign", "justify"), "content", List.of(Map.of("type", "text", "text", "Nội dung"))))));
+        var captured = new ArrayList<String>();
+        var translated = new EnglishTranslationService(input -> {
+            captured.addAll(input);
+            return input.stream().map(s -> "EN: " + s).toList();
+        }).translate("STAFF", source);
+        assertEquals(Set.of("Nghiên cứu đất đai", "Nội dung"), new HashSet<>(captured));
+        assertEquals(source.get("privateFacts"), translated.get("privateFacts"));
+        assertEquals(source.get("sourceArticleId"), translated.get("sourceArticleId"));
+        assertTrue(translated.get("document").toString().contains("textAlign=justify"));
+    }
 }

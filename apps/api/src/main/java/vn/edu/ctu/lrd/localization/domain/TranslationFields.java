@@ -9,7 +9,8 @@ public final class TranslationFields {
             "id", "slug", "code", "kind", "type", "locale", "status", "level", "format",
             "url", "website", "email", "phone", "target", "category", "articleId", "staffId",
             "programId", "coverId", "portraitId", "thumbnailId", "imageId", "assetId",
-            "sourceId", "registrationUrl", "externalUrl", "featuredIds", "newsCategory", "sections",
+            "sourceId", "sourceArticleId", "href", "textAlign", "template", "role",
+            "registrationUrl", "externalUrl", "featuredIds", "newsCategory", "sections",
             "section", "admissionsMode", "degreeType", "positionType",
             "sourceKey", "doi", "isbn", "citation", "privateNotes", "privateFacts", "author",
             "publishedOn", "retrievedOn", "startsOn", "endsOn", "opensAt", "closesAt",
@@ -35,6 +36,7 @@ public final class TranslationFields {
     }
 
     private static void visit(String kind, Object value, String key, List<String> text) {
+        if (IMMUTABLE_KEYS.contains(key)) return;
         if (value instanceof Map<?, ?> map) {
             for (var entry : map.entrySet()) visit(kind, entry.getValue(), String.valueOf(entry.getKey()), text);
         } else if (value instanceof List<?> list) {
@@ -43,6 +45,7 @@ public final class TranslationFields {
     }
 
     private static Object transform(String kind, Object value, String key, List<String> translated, int[] cursor) {
+        if (IMMUTABLE_KEYS.contains(key)) return value;
         if (value instanceof Map<?, ?> map) {
             var result = new LinkedHashMap<String, Object>();
             for (var entry : map.entrySet())
