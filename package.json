@@ -23,7 +23,13 @@
     "seed:prepare-full": "node scripts/reference/prepare-full.mjs",
     "test:import": "node --test scripts/reference/*.test.mjs",
     "infra:up": "docker compose --env-file .env -f infra/compose/compose.yml up -d postgres minio",
-    "infra:down": "docker compose --env-file .env -f infra/compose/compose.yml down"
+    "infra:down": "docker compose --env-file .env -f infra/compose/compose.yml down",
+    "seed:english:snapshot": "node --env-file=.env scripts/english/snapshot.mjs",
+    "seed:english:prepare": "node scripts/english/prepare.mjs",
+    "seed:english:check": "node scripts/english/seed.mjs",
+    "seed:english": "node --env-file=.env scripts/english/seed.mjs --apply",
+    "test:english-seed": "node --test scripts/english/*.test.mjs",
+    "seed:english:verify": "node --env-file=.env scripts/english/verify.mjs"
   },
   "devDependencies": {
     "linkedom": "^0.18.12",

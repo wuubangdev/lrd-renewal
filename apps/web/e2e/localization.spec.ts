@@ -3,7 +3,8 @@ import { expect, test } from "@playwright/test";
 test("English homepage has translated content and language navigation", async ({ page }) => {
   await page.goto("/en");
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
-  await expect(page.getByRole("heading", { name: /Understand land/ })).toBeVisible();
+  const home = await (await page.request.get("/api/v1/public/site/home?locale=en")).json();
+  await expect(page.locator(".hero h1")).toHaveText(home.content.hero.title);
   await expect(page.getByRole("link", { name: "Chuyển sang tiếng Việt" })).toHaveAttribute(
     "href",
     "/vi",

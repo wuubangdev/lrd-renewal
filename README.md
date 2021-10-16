@@ -56,6 +56,9 @@ Website công khai có `/vi` và `/en`, nút chuyển ngôn ngữ ở header. Tr
 Trong editor của **bài viết, cán bộ, phòng thí nghiệm, chương trình đào tạo, tuyển sinh, hội thảo/tin tức/tuyển dụng, nghiên cứu/học liệu, trang chủ và menu**, lưu bản nháp tiếng Việt rồi chọn **Tạo bản Anh bằng AI**. Gemini dịch các trường nội dung, giữ cấu trúc rich text, ảnh, ngày, mã, đường dẫn và các ID; bản tiếng Anh được tạo dưới dạng **nháp**, không tự đăng. Mở bản Anh để rà tên riêng, thuật ngữ, số liệu và liên kết, sau đó đăng công khai. Nút **Dịch lại** thay bản nháp tiếng Anh theo bản tiếng Việt đã lưu, nhưng không đổi nội dung đang công khai cho tới khi bấm cập nhật công khai. Bản tiếng Việt và tiếng Anh có trạng thái, lịch sử và URL riêng.
 
 Liên kết nội bộ trong trang chủ/menu được đổi sang ID tiếng Anh nếu đối tượng đích đã có bản dịch; kiểm tra các liên kết chưa có bản dịch trước khi đăng. Bài nổi bật không có bản dịch tiếng Anh sẽ không được ghim lên trang chủ tiếng Anh. Hội thảo/tin tức/tuyển dụng có bài viết liên kết sẽ tạo bản nháp tiếng Anh của bài đó trước; đăng bài viết tiếng Anh trước khi đăng hồ sơ liên kết. Quá trình dịch gửi **nội dung văn bản** tới Gemini qua khóa đã lưu ở **Hệ thống → Tích hợp**; không gửi ảnh nhị phân hay ghi chú riêng tư của cán bộ. Nếu chưa cấu hình khóa, API báo lỗi rõ ràng và không tạo bản dịch.
+
+**Seed tiếng Anh từ dữ liệu tiếng Việt hiện có:** chạy `npm run seed:english:check`, sau đó `npm run seed:english`. Gói dữ liệu giữ đầy đủ bài viết, ảnh, các mảng thuộc tính và liên kết giữa đối tượng; không phụ thuộc khóa Gemini để nạp lại. Kết quả dịch máy cần được biên tập trước khi phát hành chính thức. Phạm vi, cách chạy lại an toàn và kiểm chứng: [English seed](docs/english-seed.md).
+
 - Kiểm tra backend: [localhost:8080/actuator/health](http://localhost:8080/actuator/health)
 - MinIO console local: [localhost:59001](http://localhost:59001)
 

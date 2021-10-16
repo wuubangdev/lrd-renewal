@@ -1,0 +1,11 @@
+{
+  "repository": "luigi000/envit5-translation-ct2-int8",
+  "revision": "f68ae0e2639dacde555fe91a36b74d662848d681",
+  "files": {
+    "README.md": "841360ac3f0c662df3d0094a02a8fad47803a1c7ba94dcfdf55db9c66fc380eb",
+    "config.json": "f1859dad6c46f6b301b97634821e6f6f8928b6323293072e759ca68946dbf601",
+    "model.bin": "e8a3d9be0fc077668972ed89c351cc4c911a09e9e3c6d8966478c113fc85ff8e",
+    "shared_vocabulary.json": "89afe9585b3730300157f6039647dfb9bd5e69063f90b6072e59ddfd95fafa0d",
+    "spiece.model": "3b4eda923bbac1726e8fda66254a8783ecc705be5577149ee8c98074efdb5de5"
+  }
+}
