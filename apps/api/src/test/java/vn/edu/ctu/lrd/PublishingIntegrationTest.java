@@ -183,6 +183,63 @@ class PublishingIntegrationTest {
     }
 
     @Test
+    void invalidatedSessionsDoNotBlockPublicContentOrFreshLogin() throws Exception {
+        var reader = account("AUTHOR");
+        jdbc.update("update identity.account set auth_version=auth_version+1 where id=?", reader.accountId);
+        reader.get("/public/categories").expect(200);
+        reader.get("/auth/me").expect(401);
+        reader.mutate("POST", "/auth/login", Map.of(
+                "email", reader.accountId + "@test.invalid", "password", PASSWORD), Map.of()).expect(200);
+        jdbc.update("update identity.spring_session set creation_time=? where principal_name=?",
+                System.currentTimeMillis() - 9 * 60 * 60 * 1000L, reader.accountId + "@test.invalid");
+        reader.get("/auth/csrf").expect(200);
+        reader.get("/admin/content").expect(401);
+    }
+
+    @Test
+    void translationLinksValidateResourcesLocalesOwnershipAndConflicts() throws Exception {
+        var owner = account("AUTHOR");
+        var other = account("AUTHOR");
+        var vi = create(owner);
+        var en = owner.mutate("POST", "/admin/content", Map.of("locale", "en"), Map.of()).expect(201).node();
+        var otherVi = create(other);
+        var otherEn = other.mutate("POST", "/admin/content", Map.of("locale", "en"), Map.of()).expect(201).node();
+        var id = vi.get("id").asText();
+        owner.get("/admin/localization/links/ARTICLE/" + id).expect(204);
+        owner.get("/admin/localization/links/ARTICLE/" + otherVi.get("id").asText()).expect(403);
+        owner.mutate("PUT", "/admin/localization/links", Map.of("kind", "ARTICLE", "sourceId", id,
+                "targetId", otherEn.get("id").asText()), Map.of()).expect(403);
+        owner.mutate("PUT", "/admin/localization/links", Map.of("kind", "ARTICLE", "sourceId", id,
+                "targetId", UUID.randomUUID()), Map.of()).expect(404);
+        owner.mutate("PUT", "/admin/localization/links", Map.of("kind", "ARTICLE", "sourceId", id,
+                "targetId", create(owner).get("id").asText()), Map.of()).expect(422);
+        var link = Map.of("kind", "ARTICLE", "sourceId", id, "targetId", en.get("id").asText());
+        owner.mutate("PUT", "/admin/localization/links", link, Map.of()).expect(200);
+        owner.mutate("PUT", "/admin/localization/links", link, Map.of()).expect(200);
+        var en2 = owner.mutate("POST", "/admin/content", Map.of("locale", "en"), Map.of()).expect(201).node();
+        owner.mutate("PUT", "/admin/localization/links", Map.of("kind", "ARTICLE", "sourceId", id,
+                "targetId", en2.get("id").asText()), Map.of()).expect(409);
+        owner.mutate("PUT", "/admin/localization/links", Map.of("kind", "ARTICLE", "sourceId", create(owner).get("id").asText(),
+                "targetId", en.get("id").asText()), Map.of()).expect(409);
+        assertThat(owner.get("/admin/localization/links/ARTICLE/" + id).expect(200).node().get("targetId").asText())
+                .isEqualTo(en.get("id").asText());
+    }
+
+    @Test
+    void researchDraftCanReferenceUnpublishedStaffButPublicationCannot() throws Exception {
+        var admin = account("ADMIN");
+        var staff = admin.mutate("POST", "/admin/people", Map.of("locale", "en"), Map.of()).expect(201).node();
+        var record = admin.mutate("POST", "/admin/research", Map.of("kind", "PROJECT", "locale", "en"), Map.of()).expect(201).node();
+        var details = json.convertValue(record.get("draft"), Map.class);
+        details.put("title", "Draft research project");
+        details.put("contributors", List.of(Map.of("staffId", staff.get("id").asText(), "name", "Researcher", "role", "AUTHOR")));
+        record = admin.mutate("PATCH", "/admin/research/" + record.get("id").asText() + "/draft", details, version(record)).expect(200).node();
+        var response = admin.mutate("POST", "/admin/research/" + record.get("id").asText() + "/publish",
+                Map.of("draftVersion", record.get("draftVersion").asLong()), version(record)).expect(422);
+        assertThat(response.node().get("code").asText()).isEqualTo("STAFF_NOT_PUBLIC");
+    }
+
+    @Test
     void spreadsheetImportsStructuredDraftsAndLinksFacultyResearch() throws Exception {
         var admin = account("ADMIN");
         var token = UUID.randomUUID().toString().substring(0, 8);
