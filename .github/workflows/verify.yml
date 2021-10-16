@@ -1,0 +1,36 @@
+name: Verify
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - run: npm ci
+      - run: npm run setup
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run test:api
+      - run: npm run test:import
+      - run: npm run seed:check
+      - run: npm run infra:up
+      - name: Start API and frontend
+        run: |
+          npm run dev:api > /tmp/lrd-api.log 2>&1 &
+          npm run start --workspace @lrd/web > /tmp/lrd-web.log 2>&1 &
+          for i in $(seq 1 90); do
+            if curl -fsS http://localhost:8080/actuator/health >/dev/null && curl -fsS http://localhost:3000/admin/login >/dev/null; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
