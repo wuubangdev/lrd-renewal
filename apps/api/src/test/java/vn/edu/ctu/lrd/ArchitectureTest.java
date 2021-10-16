@@ -40,7 +40,7 @@ class ArchitectureTest {
     void crossDomainCallsUsePublishedModuleApis() {
         for (String module :
                 new String[] {
-                    "identity", "publishing", "media", "site", "discovery", "academics", "integrations", "directory", "editorial", "research"
+                    "identity", "publishing", "media", "site", "discovery", "academics", "integrations", "directory", "editorial", "research", "localization"
                 }) {
             noClasses()
                     .that()

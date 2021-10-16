@@ -34,7 +34,7 @@ public class ApiErrors {
                     case "STALE_VERSION" -> 412;
                     case "PRECONDITION_REQUIRED" -> 428;
                     case "SLUG_CONFLICT", "IDEMPOTENCY_CONFLICT", "ACCOUNT_CONFLICT",
-                            "DUPLICATE_CATEGORY", "CATEGORY_IN_USE" -> 409;
+                            "DUPLICATE_CATEGORY", "CATEGORY_IN_USE", "TRANSLATION_EXISTS" -> 409;
                     case "RATE_LIMITED" -> 429;
                     default -> 422;
                 };
