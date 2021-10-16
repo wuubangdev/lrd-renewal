@@ -6,7 +6,16 @@ mkdirSync(runtimeDirectory, { recursive: true });
 
 /** Record only resources created by a test so local cleanup can use exact IDs. */
 export function recordFixture(
-  kind: "program" | "admission" | "article" | "asset" | "account",
+  kind:
+    | "program"
+    | "admission"
+    | "article"
+    | "asset"
+    | "account"
+    | "research"
+    | "editorial"
+    | "staff"
+    | "laboratory",
   id: string,
 ) {
   const file = resolve(runtimeDirectory, "e2e-fixtures.json");

@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { recordFixture } from "./fixtures";
 
 test("phòng thí nghiệm tham khảo chuyển sang đối tượng có cấu trúc", async ({ page }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires imported reference laboratories");
@@ -12,7 +13,9 @@ test("phòng thí nghiệm tham khảo chuyển sang đối tượng có cấu t
   await expect(page.getByRole("heading", { name: /GIS/ }).first()).toBeVisible();
   await expect(page.locator(".staff-section")).not.toHaveCount(0);
   await page.setViewportSize({ width: 390, height: 844 });
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
+    true,
+  );
 });
 
 test("CMS tạo phòng thí nghiệm, biên tập thiết bị và đăng công khai", async ({ page }) => {
@@ -27,9 +30,13 @@ test("CMS tạo phòng thí nghiệm, biên tập thiết bị và đăng công 
   expect((await template.body()).subarray(0, 2).toString()).toBe("PK");
   await page.getByRole("button", { name: "Tạo phòng thí nghiệm" }).click();
   await expect(page).toHaveURL(/\/admin\/laboratories\/[0-9a-f-]+$/);
+  const id = page.url().split("/").pop()!;
+  recordFixture("laboratory", id);
   await page.getByRole("textbox", { name: "Tên phòng *" }).fill("Phòng kiểm thử dữ liệu");
   await page.getByRole("textbox", { name: "Đường dẫn *" }).fill(slug);
-  await page.getByRole("textbox", { name: "Giới thiệu ngắn *" }).fill("Không gian thực hành GIS và dữ liệu tài nguyên.");
+  await page
+    .getByRole("textbox", { name: "Giới thiệu ngắn *" })
+    .fill("Không gian thực hành GIS và dữ liệu tài nguyên.");
   await page.getByRole("button", { name: /Tiếp theo: Thiết bị/ }).click();
   await page.getByRole("button", { name: "Thêm thiết bị" }).click();
   await page.getByRole("textbox", { name: "Tên thiết bị" }).fill("Máy toàn đạc");
@@ -44,12 +51,9 @@ test("CMS tạo phòng thí nghiệm, biên tập thiết bị và đăng công 
   await expect(page.getByRole("heading", { name: "Phòng kiểm thử dữ liệu" })).toBeVisible();
   await expect(page.locator(".lab-equipment")).toContainText("02 bộ");
   const csrf = await (await page.request.get("/api/v1/auth/csrf")).json();
-  const published = await (await page.request.get("/api/v1/public/laboratories?locale=vi")).json();
-  for (const lab of published.filter((row: { details: { slug: string } }) =>
-    row.details.slug.startsWith("phong-thi-nghiem-e2e-"),
-  )) {
-    const record = await (await page.request.get(`/api/v1/admin/laboratories/${lab.id}`)).json();
-    const response = await page.request.post(`/api/v1/admin/laboratories/${lab.id}/withdraw`, {
+  {
+    const record = await (await page.request.get(`/api/v1/admin/laboratories/${id}`)).json();
+    const response = await page.request.post(`/api/v1/admin/laboratories/${id}/withdraw`, {
       headers: { [csrf.headerName]: csrf.token, "If-Match": `"${record.version}"` },
     });
     expect(response.ok()).toBe(true);

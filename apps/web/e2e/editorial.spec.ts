@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { recordFixture } from "./fixtures";
 
 test("hội thảo, tin tức, tuyển dụng có hồ sơ gắn bài viết công khai", async ({ page }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires imported reference content");
@@ -34,7 +35,10 @@ test("hội thảo, tin tức, tuyển dụng có hồ sơ gắn bài viết cô
   expect(template.ok()).toBe(true);
   expect((await template.body()).subarray(0, 2).toString()).toBe("PK");
   await page.locator(".staff-admin-row").first().click();
-  await page.getByRole("navigation", { name: "Chủ đề hội thảo" }).getByRole("button", { name: /Bài viết/ }).click();
+  await page
+    .getByRole("navigation", { name: "Chủ đề hội thảo" })
+    .getByRole("button", { name: /Bài viết/ })
+    .click();
   await expect(page.getByRole("heading", { name: "Bài viết liên kết *" })).toBeVisible();
   await expect(page.getByText("Sửa nội dung bài viết")).toBeVisible();
 });
@@ -48,9 +52,12 @@ test("CMS hội thảo lưu diễn giả và lịch trình theo trường cố �
   await page.getByRole("button", { name: "Tạo hội thảo" }).click();
   await expect(page).toHaveURL(/\/admin\/editorial\/[0-9a-f-]+$/);
   const id = page.url().split("/").pop()!;
+  recordFixture("editorial", id);
   await page.getByRole("textbox", { name: "Tiêu đề *" }).fill(`Hội thảo kiểm thử ${suffix}`);
   await page.getByRole("textbox", { name: "Đường dẫn *" }).fill(`hoi-thao-e2e-${suffix}`);
-  await page.getByRole("textbox", { name: "Mô tả ngắn *" }).fill("Hội thảo thử nghiệm cấu trúc dữ liệu.");
+  await page
+    .getByRole("textbox", { name: "Mô tả ngắn *" })
+    .fill("Hội thảo thử nghiệm cấu trúc dữ liệu.");
   await page.getByRole("button", { name: /Tiếp theo: Tổ chức/ }).click();
   await page.getByRole("textbox", { name: "Chủ đề hội thảo" }).fill("Ứng dụng GIS");
   await page.getByRole("combobox", { name: "Hình thức" }).selectOption("HYBRID");

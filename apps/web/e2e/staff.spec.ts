@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { recordFixture } from "./fixtures";
 
 test("hồ sơ cán bộ tham khảo dùng mẫu thống nhất và URL cũ chuyển tiếp", async ({ page }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires imported reference profiles");
@@ -61,6 +62,7 @@ test("CMS tạo hồ sơ, chọn mẫu, đăng công khai và giữ ghi chú n�
   await expect(page).toHaveURL(/\/admin\/staff$/);
   await page.getByRole("button", { name: "Tạo hồ sơ" }).click();
   await expect(page).toHaveURL(/\/admin\/staff\/[0-9a-f-]+$/);
+  recordFixture("staff", page.url().split("/").pop()!);
   await page.getByRole("textbox", { name: "Họ và tên *" }).fill("Nguyễn Văn Kiểm Thử");
   await page.getByRole("textbox", { name: "Đường dẫn hồ sơ" }).fill(slug);
   await page.getByRole("textbox", { name: "Học vị cao nhất" }).fill("Tiến sĩ");
