@@ -12,6 +12,13 @@ public class DirectoryCatalogAdapter implements DirectoryCatalog {
     private final LaboratoryRepository labs;
     private final StaffRepository staff;
     public DirectoryCatalogAdapter(LaboratoryRepository labs, StaffRepository staff) { this.labs = labs; this.staff = staff; }
+    public boolean staffExists(String locale, UUID id) {
+        try { return staff.get(id).locale().equals(locale); }
+        catch (vn.edu.ctu.lrd.sharedkernel.DomainException e) {
+            if ("NOT_FOUND".equals(e.code())) return false;
+            throw e;
+        }
+    }
     public Optional<String> publishedLaboratorySlug(String locale, UUID id) {
         var profile = labs.get(id);
         return profile.locale().equals(locale) && profile.live() != null

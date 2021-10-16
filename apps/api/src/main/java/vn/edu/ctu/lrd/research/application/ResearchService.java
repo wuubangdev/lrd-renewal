@@ -49,7 +49,8 @@ public final class ResearchService {
         require(!repository.slugTaken(before.locale(), details.slug(), id), "SLUG_CONFLICT", "Đường dẫn đã tồn tại.");
         require(details.sourceKey().isBlank() || !repository.sourceTaken(details.sourceKey(), id),
                 "SOURCE_CONFLICT", "Bản ghi nguồn đã được chuyển.");
-        validateStaff(before.locale(), details);
+        for (var staffId : details.staffIds()) require(directory.staffExists(before.locale(), staffId),
+                "STAFF_NOT_FOUND", "Cán bộ liên kết phải tồn tại cùng ngôn ngữ.");
         media.requireUsable(details.assetIds(), actor);
         var next = before.revise(version, details, clock.instant());
         repository.save(next, before.version());
