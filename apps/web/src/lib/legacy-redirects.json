@@ -1,0 +1,672 @@
+[
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng.html",
+    "destination": "/vi/tin-tuc/bao-dam-chat-luong-voi-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/danh-muc-minh-chung-aun-qa.html",
+    "destination": "/vi/tin-tuc/danh-muc-minh-chung-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/gioi-thieu-aun-qa.html",
+    "destination": "/vi/tin-tuc/bao-dam-chat-luong-voi-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa.html",
+    "destination": "/vi/tin-tuc/danh-gia-ngoai-aun-qa-chuong-trinh-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/loi-cam-on.html",
+    "destination": "/vi/tin-tuc/ghi-nhan-dong-gop-cho-dot-danh-gia-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/phien-be-mac-aun-qa.html",
+    "destination": "/vi/tin-tuc/be-mac-danh-gia-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/qua-trinh-danh-gia-aun-qa/phien-khai-mac-aun-qa.html",
+    "destination": "/vi/tin-tuc/khai-mac-danh-gia-aun-qa",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-m-ba-o-cha-t-l-a-ng/quy-cach-ctdt.html",
+    "destination": "/vi/tin-tuc/quy-cach-chuong-trinh-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2.html",
+    "destination": "/vi/dao-tao",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/14-dai-hoc-qldd.html",
+    "destination": "/vi/dao-tao/ky-su-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/a-i-ha-c-quy-hoa-ch-va-ng-va-a-tha.html",
+    "destination": "/vi/dao-tao/ky-su-quy-hoach-vung-va-do-thi",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/ch-qldd-2.html",
+    "destination": "/vi/dao-tao/thac-si-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/quan-ly-dat-dai-2.html",
+    "destination": "/vi/dao-tao/ky-su-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/ts-qldd-2.html",
+    "destination": "/vi/dao-tao/tien-si-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/gioithieu.html",
+    "destination": "/vi/tin-tuc/gioi-thieu-bo-mon-tai-nguyen-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2.html",
+    "destination": "/vi/tin-tuc/doi-ngu-bo-mon-tai-nguyen-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/138-hocbong-cuu-sv-qldd.html",
+    "destination": "/vi/tin-tuc/hoc-bong-don-tan-sinh-vien-nam-2024",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/139-h-c-b-ng-c-u-sv-qu-n-ly-d-t-dai-2024-k-ni-m-thanh-l-p-nganh-qldd.html",
+    "destination": "/vi/tin-tuc/hoc-bong-cuu-sinh-vien-dip-ky-niem-nganh-nam-2024",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/ha-c-ba-ng.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/131-tuyen-d-ng-k-su-do-d-c.html",
+    "destination": "/vi/tin-tuc/thong-bao-tuyen-ky-su-do-dac-nam-2024",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/149-tuy-n-d-ng-cong-ty-tnhh-do-d-c-dong-h-i.html",
+    "destination": "/vi/tin-tuc/tuyen-dung-tai-cong-ty-do-dac-dong-hai",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/152-tuy-n-d-ng-cong-ty-vdcd.html",
+    "destination": "/vi/tin-tuc/co-hoi-ky-thuat-trac-dia-tai-vdcd",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/155-tuy-n-d-ng-cong-ty-tnhh-tu-v-n-do-d-c-di-n-th-nh.html",
+    "destination": "/vi/tin-tuc/tuyen-dung-tai-cong-ty-do-dac-dien-thinh",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/164-tuy-n-sinh-vien-th-c-t-p-t-i-ubnd-xa-phu-qu-i.html",
+    "destination": "/vi/tin-tuc/co-hoi-thuc-tap-tai-ubnd-xa-phu-quoi",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/172-tuy-n-d-ng-cty-cptv-dtpt-an-giang.html",
+    "destination": "/vi/tin-tuc/tuyen-dung-ky-su-tai-don-vi-tu-van-an-giang",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-c-ba-ng-via-c-la-m/tha-ng-tin-via-c-la-m/173-tuy-n-d-ng-h-th-ng-chi-nhanh-vpdkdd.html",
+    "destination": "/vi/tin-tuc/co-hoi-viec-lam-tai-chi-nhanh-van-phong-dang-ky-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/ha-i-tha-o-icggs-2023.html",
+    "destination": "/vi/tin-tuc/hoi-thao-icggs-2023-tai-dai-hoc-can-tho",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng.html",
+    "destination": "/vi/tin-tuc",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng/140-don-tan-sinh-vien-k50-nganh-qu-n-ly-d-t-dai-va-quy-ho-ch-vung-va-do-th.html",
+    "destination": "/vi/tin-tuc/chao-don-tan-sinh-vien-khoa-50",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng/142-k-ni-m-79-nam-ngay-thanh-l-p-nganh-qldd.html",
+    "destination": "/vi/tin-tuc/ky-niem-ngay-truyen-thong-nganh-nam-2024",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng/150-tu-v-n-tuy-n-sinh-bao-tu-i-tr-2026.html",
+    "destination": "/vi/tin-tuc/tu-van-tuyen-sinh-tai-dai-hoc-can-tho-nam-2026",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng/169-b-mon-tai-nguyen-d-t-dai-tham-gia-h-i-th-o-khoa-h-c-qu-n-ly-d-t-dai-toan-qu-c-l-n-th-iv.html",
+    "destination": "/vi/tin-tuc/bo-mon-tham-gia-hoi-thao-quan-ly-dat-dai-toan-quoc-2026",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoa-t-a-ng/170-k-ni-m-81-nam-ngay-truy-n-th-ng-nganh-qu-n-ly-d-t-dai-vi-t-nam.html",
+    "destination": "/vi/tin-tuc/ky-niem-81-nam-ngay-truyen-thong-nganh-quan-ly-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao.html",
+    "destination": "/vi/tin-tuc?category=SU_KIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/acrs-2021.html",
+    "destination": "/vi/tin-tuc/hoi-thao-vien-tham-chau-a-acrs-2021",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/ht-gisideas-2018.html",
+    "destination": "/vi/tin-tuc/hoi-thao-gis-ideas-2018",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/ht-khd-qldd-2020.html",
+    "destination": "/vi/tin-tuc/hoi-thao-khoa-hoc-dat-va-quan-ly-dat-dai-2020",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/ht-qldd-2019.html",
+    "destination": "/vi/tin-tuc/hoi-thao-quan-ly-dat-dai-2019",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu.html",
+    "destination": "/vi/tin-tuc?category=NGHIEN_CUU",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/ba-i-ha-i-tha-o-trong-n-a-c.html",
+    "destination": "/vi/tin-tuc/bai-bao-hoi-thao-trong-nuoc",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/ba-i-ng-ha-i-tha-o-qua-c-ta.html",
+    "destination": "/vi/tin-tuc/bai-bao-hoi-thao-quoc-te",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/bai-dang-tc-quoc-te.html",
+    "destination": "/vi/tin-tuc/cong-bo-khoa-hoc-quoc-te",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/de-tai-cap-co-so.html",
+    "destination": "/vi/tin-tuc/de-tai-nghien-cuu-cap-co-so",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/de-tai-trong-nuoc.html",
+    "destination": "/vi/tin-tuc/de-tai-nghien-cuu-trong-nuoc",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te.html",
+    "destination": "/vi/tin-tuc/hop-tac-nghien-cuu-quoc-te",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/gia-o-tra-nh-a-xua-t-ba-n.html",
+    "destination": "/vi/tin-tuc/giao-trinh-da-xuat-ban",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/ng-ta-p-cha-trong-n-a-c.html",
+    "destination": "/vi/tin-tuc/cong-bo-khoa-hoc-trong-nuoc",
+    "statusCode": 301
+  },
+  {
+    "source": "/phong-tn-2.html",
+    "destination": "/vi/tin-tuc?category=NGHIEN_CUU",
+    "statusCode": 301
+  },
+  {
+    "source": "/phong-tn-2/facilities-vn.html",
+    "destination": "/vi/tin-tuc/trang-thiet-bi-phuc-vu-dao-tao-va-nghien-cuu",
+    "statusCode": 301
+  },
+  {
+    "source": "/phong-tn-2/ptn-gis-vt-2.html",
+    "destination": "/vi/tin-tuc/phong-thi-nghiem-gis-va-vien-tham",
+    "statusCode": 301
+  },
+  {
+    "source": "/phong-tn-2/ptn-tndd-2.html",
+    "destination": "/vi/tin-tuc/phong-thi-nghiem-tai-nguyen-dat-dai",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ca-c-sinh-via-n.html",
+    "destination": "/vi/tin-tuc/mang-luoi-cuu-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ca-c-sinh-via-n/alumni-network-2.html",
+    "destination": "/vi/tin-tuc/mang-luoi-cuu-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ca-c-sinh-via-n/ha-tra-sinh-vien.html",
+    "destination": "/vi/tin-tuc/cuu-sinh-vien-dong-hanh-cung-nguoi-hoc",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ca-c-sinh-via-n/hoa-t-a-ng-xa-ha-i.html",
+    "destination": "/vi/tin-tuc/hoat-dong-cong-dong-cua-cuu-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ga-p-a-pha-n-ha-i.html",
+    "destination": "/vi/tin-tuc/gop-y-va-phan-hoi-cua-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/hoa-t-a-ng-sinh-via-n.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/hoa-t-a-ng-sinh-via-n/141-chuong-trinh-trao-d-i-sinh-vien-nu-c-ngoai.html",
+    "destination": "/vi/tin-tuc/chuong-trinh-trao-doi-sinh-vien-quoc-te",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/hoa-t-a-ng-sinh-via-n/171-trao-d-i-sinh-vien-t-i-d-i-h-c-srinakharinwirot-thai-lan-nam-2026.html",
+    "destination": "/vi/tin-tuc/sinh-vien-trao-doi-hoc-tap-tai-thai-lan-nam-2026",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/ma-u-lua-n-v-n.html",
+    "destination": "/vi/tin-tuc/mau-va-huong-dan-trinh-bay-luan-van",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/nghia-n-ca-u-khoa-ha-c-sinh-via-n.html",
+    "destination": "/vi/tin-tuc/nghien-cuu-khoa-hoc-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin.html",
+    "destination": "/vi/tin-tuc?category=SINH_VIEN",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/105-l-ch-bao-cao-lu-n-van-h-c-ky-1-2021-2022.html",
+    "destination": "/vi/tin-tuc/lich-bao-cao-luan-van-hoc-ky-1-nam-hoc-2021-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/107-l-ch-thi-h-c-ky-1-2021-2021.html",
+    "destination": "/vi/tin-tuc/lich-thi-hoc-ky-1-thong-bao-luu-tru-nam-2021",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/108-k-ho-ch-gi-ng-d-y-h-c-ky-2-2021-2022.html",
+    "destination": "/vi/tin-tuc/ke-hoach-giang-day-hoc-ky-2-nam-hoc-2021-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/116-lvtn-hk2-21-22.html",
+    "destination": "/vi/tin-tuc/thong-bao-luan-van-hoc-ky-2-nam-hoc-2021-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/120-phat-b-ng-th-c-si-ti-n-si.html",
+    "destination": "/vi/tin-tuc/trao-bang-sau-dai-hoc-nganh-quan-ly-dat-dai-nam-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/125-ke-hoa-ch-lvtn-21-23.html",
+    "destination": "/vi/tin-tuc/ke-hoach-luan-van-hoc-ky-1-nam-hoc-2022-2023",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/126-b-o-v-lu-n-an-ti-n-si-c-p-tru-ng-ncs-nguy-n-minh-thong.html",
+    "destination": "/vi/tin-tuc/bao-ve-luan-an-cua-ncs-nguyen-minh-thong-nam-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/88-hop-mat-ky-niem-ngay-truyen-thong-nganh-qldd.html",
+    "destination": "/vi/tin-tuc/hop-mat-ngay-truyen-thong-nganh-nam-2021",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/xuat-ban-nckh-sinh-via-n-ql.html",
+    "destination": "/vi/tin-tuc/nghien-cuu-khoa-hoc-sinh-vien",
+    "statusCode": 301
+  },
+  {
+    "source": "/tuya-n-sinh.html",
+    "destination": "/vi/tuyen-sinh",
+    "statusCode": 301
+  },
+  {
+    "source": "/tuya-n-sinh/124-ts-quan-ly-dat-dai.html",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-quan-ly-dat-dai-2026",
+    "statusCode": 301
+  },
+  {
+    "source": "/tuya-n-sinh/130-tien-si-qldd-2025-2.html",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-tien-si-quan-ly-dat-dai-2026-dot-2",
+    "statusCode": 301
+  },
+  {
+    "source": "/tuya-n-sinh/132-quy-hoach-vung-do-thi.html",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-quy-hoach-vung-va-do-thi-2026",
+    "statusCode": 301
+  },
+  {
+    "source": "/tuya-n-sinh/168-thac-si-qldd-2025-2.html",
+    "destination": "/vi/tuyen-sinh/tuyen-sinh-thac-si-quan-ly-dat-dai-2026-dot-2",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/hoa-t-a-ng-sinh-via-n/103-ho-t-d-ng-sinh-vien.html",
+    "destination": "/vi/tin-tuc/hoat-dong-sinh-vien-6eecd0",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/117-ke-hoa-ch-lvtn-21-22.html",
+    "destination": "/vi/tin-tuc/ke-hoach-khung-thuc-hien-luan-van-tot-nghiep-hoc-ky-2-2021-2022-e756e3",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/22-pgs-ts-pham-thanh-vu.html",
+    "destination": "/vi/tin-tuc/pgs-ts-pham-thanh-vu-d5c25b",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/30-ts-phan-kieu-diem.html",
+    "destination": "/vi/tin-tuc/pgs-ts-phan-kieu-diem-252429",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/26-ts-truong-chi-quang.html",
+    "destination": "/vi/tin-tuc/pgs-ts-truong-chi-quang-56b665",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/19-gs-ts-vo-quang-minh.html",
+    "destination": "/vi/tin-tuc/gs-ts-vo-quang-minh-e17c76",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/23-pgs-ts-nguyen-thi-hong-diep.html",
+    "destination": "/vi/tin-tuc/pgs-ts-nguyen-thi-hong-diep-e4845b",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/24-pgs-ts-vo-quoc-tuan.html",
+    "destination": "/vi/tin-tuc/pgs-ts-vo-quoc-tuan-d9fe0d",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/25-ts-huynh-thi-thu-huong.html",
+    "destination": "/vi/tin-tuc/ts-huynh-thi-thu-huong-32358f",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/27-ths-nguyen-thi-song-binh.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-thi-song-binh-cc930e",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/28-ths-tran-van-hung.html",
+    "destination": "/vi/tin-tuc/ts-tran-van-hung-2e429e",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/29-ts-nguyen-huu-kiet.html",
+    "destination": "/vi/tin-tuc/ts-nguyen-huu-kiet-b85cf6",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/31-ths-vuong-tuan-huy.html",
+    "destination": "/vi/tin-tuc/ths-vuong-tuan-huy-98c0f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/32-ths-nguyen-thi-ha-mi.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-thi-ha-mi-29c1a9",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/33-ths-phan-hoang-vu.html",
+    "destination": "/vi/tin-tuc/ths-phan-hoang-vu-fb851f",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/34-ths-thai-thanh-du.html",
+    "destination": "/vi/tin-tuc/ths-thai-thanh-du-0389f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/35-ths-ly-trung-nguyen.html",
+    "destination": "/vi/tin-tuc/ths-ly-trung-nguyen-31ca66",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/36-ths-nguyen-kieu-diem.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-kieu-diem-a459f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/2-uncategorised/147-ths-nguyen-trong-nguyen.html",
+    "destination": "/vi/tin-tuc/ks-nguyen-trong-nguyen-a342a7",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/19-gs-ts-vo-quang-minh.html",
+    "destination": "/vi/tin-tuc/gs-ts-vo-quang-minh-e17c76",
+    "statusCode": 301
+  },
+  {
+    "source": "/dao-tao-2/15-dai-hoc-lam-sinh.html",
+    "destination": "/vi/tin-tuc/dai-hoc-lam-sinh-8f166d",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te/6-nghia-n-ca-u/conferrences-2/15.html",
+    "destination": "/vi/tin-tuc/to-chuc-hoi-thao-f07ef9",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te/6-nghia-n-ca-u/publication-2/14.html",
+    "destination": "/vi/tin-tuc/xuat-ban-quoc-te-eef5cb",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/ng-ta-p-cha-trong-n-a-c/25-xua-t-ba-n-kh/135-d-an-h-p-tac-qu-c-t.html",
+    "destination": "/vi/tin-tuc/du-an-hop-tac-quoc-te-3b195e",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/xuat-ban-nckh-sinh-via-n-ql/25-xua-t-ba-n-kh/135-d-an-h-p-tac-qu-c-t.html",
+    "destination": "/vi/tin-tuc/du-an-hop-tac-quoc-te-3b195e",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/127-h-i-th-o-cong-ngh-s-trong-khai-thac-s-d-ng-va-qu-n-ly-tai-nguyen-d-t-dai-theo-hu-ng-b-n-v-ng.html",
+    "destination": "/vi/tin-tuc/hoi-thao-cach-mang-cong-nghiep-4-0-trong-nong-nghiep-va-quan-ly-khai-thac-tai-nguyen-dat-dai-2021-0caf02",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/128-h-i-th-o-cong-ngh-s-trong-khai-thac-s-d-ng-va-qu-n-ly-tai-nguyen-d-t-dai-theo-hu-ng-b-n-v-ng-2.html",
+    "destination": "/vi/tin-tuc/hoi-thao-cong-nghe-so-trong-khai-thac-su-dung-va-quan-ly-tai-nguyen-dat-dai-theo-huong-ben-vung-2022-495665",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/41-hn-khd-2018.html",
+    "destination": "/vi/tin-tuc/hoi-nghi-khoa-hoc-dat-2018-bda5de",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/40-ht-lam-sinh-2018.html",
+    "destination": "/vi/tin-tuc/hoi-thao-lam-sinh-2018-fdd6fb",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/83-seminar-nghien-cuu-phat-trien-drone.html",
+    "destination": "/vi/tin-tuc/thong-bao-seminar-nghien-cuu-phat-trien-va-ung-dung-thiet-bi-bay-khong-nguoi-lai-tai-vien-cong-nghe-chau-a-62c0cc",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/36-ths-nguyen-kieu-diem.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-kieu-diem-a459f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/35-ths-ly-trung-nguyen.html",
+    "destination": "/vi/tin-tuc/ths-ly-trung-nguyen-31ca66",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/147-ths-nguyen-trong-nguyen.html",
+    "destination": "/vi/tin-tuc/ks-nguyen-trong-nguyen-a342a7",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/34-ths-thai-thanh-du.html",
+    "destination": "/vi/tin-tuc/ths-thai-thanh-du-0389f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/33-ths-phan-hoang-vu.html",
+    "destination": "/vi/tin-tuc/ths-phan-hoang-vu-fb851f",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/32-ths-nguyen-thi-ha-mi.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-thi-ha-mi-29c1a9",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/31-ths-vuong-tuan-huy.html",
+    "destination": "/vi/tin-tuc/ths-vuong-tuan-huy-98c0f8",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/30-ts-phan-kieu-diem.html",
+    "destination": "/vi/tin-tuc/pgs-ts-phan-kieu-diem-252429",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/29-ts-nguyen-huu-kiet.html",
+    "destination": "/vi/tin-tuc/ts-nguyen-huu-kiet-b85cf6",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/23-pgs-ts-nguyen-thi-hong-diep.html",
+    "destination": "/vi/tin-tuc/pgs-ts-nguyen-thi-hong-diep-e4845b",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/27-ths-nguyen-thi-song-binh.html",
+    "destination": "/vi/tin-tuc/ths-nguyen-thi-song-binh-cc930e",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/25-ts-huynh-thi-thu-huong.html",
+    "destination": "/vi/tin-tuc/ts-huynh-thi-thu-huong-32358f",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/22-pgs-ts-pham-thanh-vu.html",
+    "destination": "/vi/tin-tuc/pgs-ts-pham-thanh-vu-d5c25b",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/24-pgs-ts-vo-quoc-tuan.html",
+    "destination": "/vi/tin-tuc/pgs-ts-vo-quoc-tuan-d9fe0d",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/26-ts-truong-chi-quang.html",
+    "destination": "/vi/tin-tuc/pgs-ts-truong-chi-quang-56b665",
+    "statusCode": 301
+  },
+  {
+    "source": "/gioi-thieu/nhan-su-2/22-nha-n-sa/28-ths-tran-van-hung.html",
+    "destination": "/vi/tin-tuc/ts-tran-van-hung-2e429e",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te/3-research/international-cooperations/9.html",
+    "destination": "/vi/tin-tuc/international-cooperations-642e3a",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te/3-research/conferences/4.html",
+    "destination": "/vi/tin-tuc/conferences-2b5244",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/du-an-hop-tac-quoc-te/3-research/publication/2.html",
+    "destination": "/vi/tin-tuc/publications-c11ca5",
+    "statusCode": 301
+  },
+  {
+    "source": "/nghien-cuu/bai-dang-tc-quoc-te/25-xua-t-ba-n-kh/135-d-an-h-p-tac-qu-c-t.html",
+    "destination": "/vi/tin-tuc/du-an-hop-tac-quoc-te-3b195e",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/82-seminar-lap-ban-do-du-lieu-khong-gian.html",
+    "destination": "/vi/tin-tuc/thong-bao-seminar-cac-phuong-phap-lap-ban-do-va-khai-thac-du-lieu-tai-nguyen-khong-gian-dat-dai-50aaa7",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/81-chao-don-tsv-khoa-mt-tntn.html",
+    "destination": "/vi/tin-tuc/khoa-moi-truong-va-tai-nguyen-thien-nhien-chao-don-tan-sinh-vien-khoa-47-hinh-thuc-truc-tuyen-02b2fb",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/thong-tin/80-chao-don-tsv-k47.html",
+    "destination": "/vi/tin-tuc/chao-don-tan-sinh-vien-quan-ly-dat-dai-khoa-47-5b6773",
+    "statusCode": 301
+  },
+  {
+    "source": "/sinh-via-n/nghia-n-ca-u-khoa-ha-c-sinh-via-n/25-xua-t-ba-n-kh/135-d-an-h-p-tac-qu-c-t.html",
+    "destination": "/vi/tin-tuc/du-an-hop-tac-quoc-te-3b195e",
+    "statusCode": 301
+  },
+  {
+    "source": "/hoi-thao/ht-cn40-tndd-2021.html",
+    "destination": "/vi/tin-tuc/hoi-thao-cach-mang-cong-nghiep-4-0-trong-nong-nghiep-va-quan-ly-khai-thac-tai-nguyen-dat-dai-2021-0caf02",
+    "statusCode": 301
+  }
+]

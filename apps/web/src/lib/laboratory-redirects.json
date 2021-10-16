@@ -1,0 +1,12 @@
+[
+  {
+    "source": "/vi/tin-tuc/phong-thi-nghiem-gis-va-vien-tham",
+    "destination": "/vi/phong-thi-nghiem/phong-thi-nghiem-gis-va-vien-tham",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/phong-thi-nghiem-tai-nguyen-dat-dai",
+    "destination": "/vi/phong-thi-nghiem/phong-thi-nghiem-tai-nguyen-dat-dai",
+    "permanent": true
+  }
+]

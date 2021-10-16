@@ -1,0 +1,92 @@
+[
+  {
+    "source": "/vi/tin-tuc/pgs-ts-pham-thanh-vu-d5c25b",
+    "destination": "/vi/can-bo/pgs-ts-pham-thanh-vu-d5c25b",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/pgs-ts-phan-kieu-diem-252429",
+    "destination": "/vi/can-bo/pgs-ts-phan-kieu-diem-252429",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/pgs-ts-truong-chi-quang-56b665",
+    "destination": "/vi/can-bo/pgs-ts-truong-chi-quang-56b665",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/gs-ts-vo-quang-minh-e17c76",
+    "destination": "/vi/can-bo/gs-ts-vo-quang-minh-e17c76",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/pgs-ts-nguyen-thi-hong-diep-e4845b",
+    "destination": "/vi/can-bo/pgs-ts-nguyen-thi-hong-diep-e4845b",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/pgs-ts-vo-quoc-tuan-d9fe0d",
+    "destination": "/vi/can-bo/pgs-ts-vo-quoc-tuan-d9fe0d",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ts-huynh-thi-thu-huong-32358f",
+    "destination": "/vi/can-bo/ts-huynh-thi-thu-huong-32358f",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-nguyen-thi-song-binh-cc930e",
+    "destination": "/vi/can-bo/ths-nguyen-thi-song-binh-cc930e",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ts-tran-van-hung-2e429e",
+    "destination": "/vi/can-bo/ts-tran-van-hung-2e429e",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ts-nguyen-huu-kiet-b85cf6",
+    "destination": "/vi/can-bo/ts-nguyen-huu-kiet-b85cf6",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-vuong-tuan-huy-98c0f8",
+    "destination": "/vi/can-bo/ths-vuong-tuan-huy-98c0f8",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-nguyen-thi-ha-mi-29c1a9",
+    "destination": "/vi/can-bo/ths-nguyen-thi-ha-mi-29c1a9",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-phan-hoang-vu-fb851f",
+    "destination": "/vi/can-bo/ths-phan-hoang-vu-fb851f",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-thai-thanh-du-0389f8",
+    "destination": "/vi/can-bo/ths-thai-thanh-du-0389f8",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-ly-trung-nguyen-31ca66",
+    "destination": "/vi/can-bo/ths-ly-trung-nguyen-31ca66",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ths-nguyen-kieu-diem-a459f8",
+    "destination": "/vi/can-bo/ths-nguyen-kieu-diem-a459f8",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/ks-nguyen-trong-nguyen-a342a7",
+    "destination": "/vi/can-bo/ks-nguyen-trong-nguyen-a342a7",
+    "permanent": true
+  },
+  {
+    "source": "/vi/tin-tuc/doi-ngu-bo-mon-tai-nguyen-dat-dai",
+    "destination": "/vi/can-bo",
+    "permanent": true
+  }
+]
