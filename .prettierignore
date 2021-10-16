@@ -1,0 +1,9 @@
+node_modules
+.next
+target
+.runtime
+package-lock.json
+apps/api
+playwright-report
+test-results
+data/reference-site/source/*.html

@@ -1,0 +1,32 @@
+{
+  "name": "lrd",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "setup": "node scripts/init-local.mjs",
+    "dev": "npm run dev --workspace @lrd/web",
+    "dev:api": "node --env-file=.env scripts/maven.mjs spring-boot:run",
+    "build": "npm run build --workspace @lrd/web",
+    "typecheck": "npm run typecheck --workspace @lrd/web",
+    "test:api": "node --env-file=.env scripts/maven.mjs verify",
+    "test:e2e": "npm run test:e2e --workspace @lrd/web",
+    "seed:check": "node scripts/reference/seed.mjs",
+    "seed:reference": "node --env-file=.env scripts/reference/seed.mjs --apply",
+    "seed:assets": "node scripts/reference/prepare-assets.mjs",
+    "seed:capture": "node scripts/reference/capture.mjs",
+    "seed:prepare-full": "node scripts/reference/prepare-full.mjs",
+    "test:import": "node --test scripts/reference/*.test.mjs",
+    "infra:up": "docker compose --env-file .env -f infra/compose/compose.yml up -d postgres minio",
+    "infra:down": "docker compose --env-file .env -f infra/compose/compose.yml down"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.12",
+    "prettier": "3.6.2"
+  }
+}

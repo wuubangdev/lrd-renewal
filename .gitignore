@@ -1,0 +1,15 @@
+node_modules/
+.next/
+target/
+.env
+.env.local
+.env.*.local
+.runtime/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/
+!.env.example
