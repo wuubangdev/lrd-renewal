@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse"><stop stop-color="#E6F2EA"/><stop offset="1" stop-color="#F8FAF8"/></linearGradient></defs>
+<path fill="url(#ground)" d="M0 0h1200v750H0z"/>
+<path fill="#C7E2D6" opacity=".42" d="M0 0h301l333 750H0z"/>
+<circle cx="778" cy="377" r="286" fill="#C7E2D6" opacity=".45"/>
+<g stroke="#127568" stroke-width="3" opacity=".19"><path d="M-80 571c195-181 309-93 420-238s194-119 310-184"/><path d="M-78 623c195-181 309-93 420-238s194-119 310-184"/><path d="M-76 675c195-181 309-93 420-238s194-119 310-184"/><path d="M-74 727c195-181 309-93 420-238s194-119 310-184"/><path d="M-72 779c195-181 309-93 420-238s194-119 310-184"/></g>
+<circle cx="105" cy="98" r="18" fill="#127568" opacity=".6"/><path d="M105 137v121" stroke="#127568" stroke-width="4" opacity=".35"/>
+<g stroke="#127568" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"><path d="M570 270c74-31 145-29 214 7v258c-69-36-140-38-214-7V270Zm214 7c69-36 140-38 214-7v258c-74-31-145-29-214 7V277Z"/><path d="M784 278v257M615 337c39-11 76-11 112 0M841 337c37-11 74-11 112 0M615 390c39-11 76-11 112 0M841 390c37-11 74-11 112 0"/></g>
+<path d="M951 79h150M1051 54v82" stroke="#127568" stroke-width="4" opacity=".4"/>
+</svg>
