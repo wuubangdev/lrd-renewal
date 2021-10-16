@@ -16,7 +16,7 @@ export default async function ContentList({
 }: {
   searchParams: Promise<{ page?: string; q?: string; category?: string; status?: string }>;
 }) {
-  await requireUser();
+  const user = await requireUser();
   const filters = await searchParams;
   const page = Math.max(0, Number(filters.page) || 0);
   const q = (filters.q ?? "").slice(0, 200),
@@ -88,9 +88,11 @@ export default async function ContentList({
           <div className="table-title">
             <strong>{q || category || status ? "Kết quả lọc" : "Tất cả bài viết"}</strong>
             <span className="count">{result.total}</span>
-            <Link className="table-title-link" href="/admin/categories">
-              <Tags size={16} /> Quản lý chuyên mục
-            </Link>
+            {user.permissions.includes("site:manage") && (
+              <Link className="table-title-link" href="/admin/categories">
+                <Tags size={16} /> Quản lý chuyên mục
+              </Link>
+            )}
           </div>
           {result.items.length ? (
             <div className="table-scroll">

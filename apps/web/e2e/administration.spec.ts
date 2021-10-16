@@ -72,6 +72,18 @@ test("quản lý tài khoản, cấp quyền, reset một lần và tự đổi 
   await expect(user.locator(".alert.error")).toContainText("không hợp lệ");
   await login(user, email, password, "/admin/content");
   await expect(user.getByRole("link", { name: "Tài khoản", exact: true })).toHaveCount(0);
+  await expect(user.getByRole("link", { name: "Quản lý chuyên mục", exact: true })).toHaveCount(0);
+  for (const path of ["/admin/research", "/admin/editorial"]) {
+    expect(
+      (
+        await user.request.get(
+          "/api/v1" + path + "?kind=" + (path.endsWith("research") ? "PROJECT" : "EVENT"),
+        )
+      ).status(),
+    ).toBe(403);
+    await user.goto(path);
+    await expect(user.getByRole("heading", { name: "Không có quyền truy cập" })).toBeVisible();
+  }
   expect((await user.request.get("/api/v1/admin/users")).status()).toBe(403);
   expect((await user.request.get("/api/v1/admin/site/home")).status()).toBe(403);
   expect((await user.request.get("/api/v1/admin/academics/programs")).status()).toBe(403);

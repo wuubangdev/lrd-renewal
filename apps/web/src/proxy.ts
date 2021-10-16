@@ -39,19 +39,23 @@ export async function proxy(request: NextRequest) {
       ? "identity:manage"
       : /^\/admin\/integrations(\/|$)/.test(path)
         ? "integrations:manage"
-        : /^\/admin\/(staff|laboratories)(\/|$)/.test(path)
-          ? "directory:manage"
-          : /^\/admin\/categories(\/|$)/.test(path)
-            ? "site:manage"
-            : /^\/admin\/(programs|admissions)(\/|$)/.test(path)
-              ? "academics:manage"
-              : /^\/admin\/site(\/|$)/.test(path)
+        : /^\/admin\/editorial(\/|$)/.test(path)
+          ? "editorial:manage"
+          : /^\/admin\/research(\/|$)/.test(path)
+            ? "research:manage"
+            : /^\/admin\/(staff|laboratories)(\/|$)/.test(path)
+              ? "directory:manage"
+              : /^\/admin\/categories(\/|$)/.test(path)
                 ? "site:manage"
-                : /^\/admin\/media(\/|$)/.test(path)
-                  ? "media:upload"
-                  : /^\/admin\/content(\/|$)/.test(path)
-                    ? "content:create"
-                    : null;
+                : /^\/admin\/(programs|admissions)(\/|$)/.test(path)
+                  ? "academics:manage"
+                  : /^\/admin\/site(\/|$)/.test(path)
+                    ? "site:manage"
+                    : /^\/admin\/media(\/|$)/.test(path)
+                      ? "media:upload"
+                      : /^\/admin\/content(\/|$)/.test(path)
+                        ? "content:create"
+                        : null;
     if (
       !Array.isArray(payload.permissions) ||
       (permission && !payload.permissions.includes(permission))
