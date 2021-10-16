@@ -1,4 +1,5 @@
 "use client";
+import { useUnsavedChanges } from "@/components/unsaved-changes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Save, Eye, History, Upload, Download, ArrowLeft, ArrowRight } from "lucide-react";
@@ -63,16 +64,7 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
   const createFlow = kind === "programs" && initial.version === 0 && !view.publishedAt;
   const currentProgramStep = programTabs.findIndex(([key]) => key === tab);
   useEffect(() => setReady(true), []);
-  useEffect(() => {
-    function leave(e: BeforeUnloadEvent) {
-      if (dirty) {
-        e.preventDefault();
-        e.returnValue = "";
-      }
-    }
-    window.addEventListener("beforeunload", leave);
-    return () => window.removeEventListener("beforeunload", leave);
-  }, [dirty]);
+  useUnsavedChanges(dirty);
   function change(d: ProgramDraft | AdmissionDraft) {
     setContent(d);
     setDirty(true);
@@ -151,7 +143,18 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
                   : { reason, deadline: fromLocalTime(deadline) },
               ),
             });
-      accept(v);
+      if (action === "reload" || action === "restore" || !dirty) accept(v);
+      else {
+        setView(v);
+        // The deadline is controlled by this operation once public. Keep local
+        // editorial fields, but adopt the new deadline so the next save remains valid.
+        if (action === "extend" && kind === "admissions") {
+          setContent((current) => ({
+            ...current,
+            closesAt: (v.content as AdmissionDraft).closesAt,
+          }));
+        }
+      }
       setNotice(
         action === "restore"
           ? "Đã đưa phiên bản cũ về bản nháp. Công khai để áp dụng nội dung."
@@ -178,13 +181,7 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
   return (
     <>
       <header className="admin-topbar">
-        <Link
-          href={"/admin/" + kind}
-          onClick={(e) => {
-            if (dirty && !window.confirm("Bạn có thay đổi chưa lưu. Rời trang và bỏ thay đổi?"))
-              e.preventDefault();
-          }}
-        >
+        <Link href={"/admin/" + kind}>
           ← {kind === "programs" ? "Chương trình đào tạo" : "Tuyển sinh"}
         </Link>
         <span>
@@ -266,11 +263,7 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
                 Khôi phục về nháp
               </button>
             ) : (
-              <button
-                disabled={busy || dirty}
-                className="button ghost"
-                onClick={() => ask("retire")}
-              >
+              <button disabled={busy} className="button ghost" onClick={() => ask("retire")}>
                 Ngừng công khai
               </button>
             )
@@ -281,26 +274,18 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
                 {!["CLOSED_EARLY", "NOTICE"].includes(view.admissionStatus ?? "") && (
                   <button
                     className="button secondary"
-                    disabled={busy || dirty}
+                    disabled={busy}
                     onClick={() => ask("extend")}
                   >
                     Gia hạn
                   </button>
                 )}
                 {["OPEN", "UPCOMING"].includes(view.admissionStatus ?? "") && (
-                  <button
-                    className="button secondary"
-                    disabled={busy || dirty}
-                    onClick={() => ask("close")}
-                  >
+                  <button className="button secondary" disabled={busy} onClick={() => ask("close")}>
                     Đóng sớm
                   </button>
                 )}
-                <button
-                  className="button ghost"
-                  disabled={busy || dirty}
-                  onClick={() => ask("withdraw")}
-                >
+                <button className="button ghost" disabled={busy} onClick={() => ask("withdraw")}>
                   Gỡ công khai
                 </button>
               </>
@@ -482,6 +467,11 @@ export function AcademicEditor({ kind, initial }: { kind: Kind; initial: Academi
                         ? "Gỡ thông báo và đường dẫn công khai; bản nháp và lịch sử được giữ lại."
                         : "Hạn mới phải sau hạn cũ và thời điểm hiện tại. Chỉ mốc đóng được cập nhật lên bản công khai; nội dung nháp khác giữ nguyên."}
                 </p>
+                {dirty && (
+                  <p className="muted">
+                    Phần đang nhập chưa lưu được giữ tại đây và chưa được đăng công khai.
+                  </p>
+                )}
                 {action === "extend" && (
                   <TextField
                     label="Hạn đóng mới (giờ Việt Nam)"

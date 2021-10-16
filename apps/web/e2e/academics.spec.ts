@@ -70,11 +70,15 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByRole("button", { name: "Sử dụng ảnh", exact: true }).click();
   await page.getByRole("button", { name: /Tiếp theo: Đầu ra & nghề nghiệp/ }).click();
   await page.getByRole("button", { name: "Thêm chuẩn đầu ra" }).click();
-  await page.getByRole("textbox", { name: "Chuẩn đầu ra 1" }).fill("Phân tích dữ liệu tài nguyên đất");
+  await page
+    .getByRole("textbox", { name: "Chuẩn đầu ra 1" })
+    .fill("Phân tích dữ liệu tài nguyên đất");
   await page.getByRole("button", { name: "Thêm chuẩn đầu ra" }).click();
   await page.getByRole("textbox", { name: "Chuẩn đầu ra 2" }).fill("Lập quy hoạch sử dụng đất");
   await page.getByRole("button", { name: "Thêm cơ hội" }).click();
-  await page.getByRole("textbox", { name: "Cơ hội nghề nghiệp 1" }).fill("Chuyên viên quản lý đất đai");
+  await page
+    .getByRole("textbox", { name: "Cơ hội nghề nghiệp 1" })
+    .fill("Chuyên viên quản lý đất đai");
   await page.getByRole("button", { name: /Tiếp theo: Khung chương trình/ }).click();
   await page.getByRole("button", { name: "Thêm khung chương trình" }).click();
   await page
@@ -102,7 +106,7 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByRole("button", { name: /Tiếp theo: Liên hệ/ }).click();
   await contact(page);
   await page.getByRole("button", { name: "Lưu nháp", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Đã lưu");
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã lưu");
   let program = await (
     await page.request.get("/api/v1/admin/academics/programs/" + programId)
   ).json();
@@ -118,7 +122,7 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
     (await reader.request.get("/api/v1/public/media/" + program.content.coverId)).status(),
   ).toBe(404);
   await page.getByRole("button", { name: "Lưu và công khai", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Đã công khai");
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã công khai");
   await reader.goto("/vi/dao-tao/" + slug);
   await expect(reader.getByRole("heading", { name: title, exact: true })).toBeVisible();
   await expect(reader.getByRole("cell", { name: "DD101", exact: true })).toBeVisible();
@@ -138,7 +142,7 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByRole("tab", { name: "Thông tin chung", exact: true }).click();
   await page.getByRole("textbox", { name: "Đường dẫn *", exact: true }).fill(slug + "-moi");
   await page.getByRole("button", { name: "Lưu và công khai", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Đã công khai");
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã công khai");
   await reader.goto("/vi/dao-tao/" + slug);
   await expect(reader).toHaveURL(new RegExp(slug + "-moi$"));
   await page.getByRole("link", { name: "Tuyển sinh", exact: true }).click();
@@ -178,7 +182,7 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByLabel("Thời gian *", { exact: true }).fill(local(3 * 86400000));
   await contact(page);
   await page.getByRole("button", { name: "Lưu và công khai", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Đã công khai");
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã công khai");
   await reader.goto("/vi/tuyen-sinh/" + admissionSlug);
   await expect(
     reader.getByRole("link", { name: "Nộp hồ sơ trực tuyến", exact: true }),
@@ -196,13 +200,20 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
     .getByRole("textbox", { name: "Tên hiển thị *", exact: true })
     .fill("Bản nháp chưa công khai " + suffix);
   await page.getByRole("button", { name: "Lưu nháp", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Đã lưu");
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã lưu");
+  const localTitle = "Thay đổi chưa lưu trước gia hạn " + suffix;
+  await page.getByRole("textbox", { name: "Tên hiển thị *", exact: true }).fill(localTitle);
   await page.getByRole("button", { name: "Gia hạn", exact: true }).click();
   await page.getByLabel("Hạn đóng mới (giờ Việt Nam) *", { exact: true }).fill(local(2 * 86400000));
   await page.getByLabel("Lý do *", { exact: true }).fill("Bổ sung thời gian nhận hồ sơ");
   await page.getByRole("button", { name: "Xác nhận", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
-  await expect(page.getByRole("status")).toContainText("thành công");
+  await expect(page.locator(".alert[role=status]")).toContainText("thành công");
+  await expect(page.getByRole("textbox", { name: "Tên hiển thị *", exact: true })).toHaveValue(
+    localTitle,
+  );
+  await page.getByRole("button", { name: "Lưu nháp", exact: true }).click();
+  await expect(page.locator(".alert[role=status]")).toContainText("Đã lưu");
   await reader.reload();
   await expect(
     reader.getByRole("heading", { name: "Tuyển sinh E2E " + suffix, exact: true }),
@@ -223,7 +234,7 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByLabel("Lý do *", { exact: true }).fill("Đã đủ số lượng hồ sơ");
   await page.getByRole("button", { name: "Xác nhận", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
-  await expect(page.getByRole("status")).toContainText("thành công");
+  await expect(page.locator(".alert[role=status]")).toContainText("thành công");
   await reader.reload();
   await expect(
     reader.getByRole("heading", { name: "Thông báo đóng sớm", exact: true }),
@@ -240,13 +251,13 @@ test("CMS đào tạo và tuyển sinh: phiên bản, công khai, gia hạn, đ�
   await page.getByLabel("Lý do *", { exact: true }).fill("Kết thúc dữ liệu kiểm thử");
   await page.getByRole("button", { name: "Xác nhận", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
-  await expect(page.getByRole("status")).toContainText("thành công");
+  await expect(page.locator(".alert[role=status]")).toContainText("thành công");
   await page.goto("/admin/programs/" + programId);
   await page.getByRole("button", { name: "Ngừng công khai", exact: true }).click();
   await page.getByLabel("Lý do *", { exact: true }).fill("Kết thúc dữ liệu kiểm thử");
   await page.getByRole("button", { name: "Xác nhận", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
-  await expect(page.getByRole("status")).toContainText("thành công");
+  await expect(page.locator(".alert[role=status]")).toContainText("thành công");
   expect((await reader.request.get("/api/v1/public/academics/programs/" + slug)).status()).toBe(
     404,
   );
