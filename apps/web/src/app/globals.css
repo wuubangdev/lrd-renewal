@@ -838,11 +838,26 @@
 
 /* Admin content workflow */
 .admin-list-filters {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(240px, 1.5fr) repeat(2, minmax(150px, 1fr)) auto;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
   margin: 0 0 18px;
+}
+.admin-list-filters .admin-search-input {
+  min-width: 0;
+  margin: 0;
+}
+.admin-content .table-scroll {
+  position: relative;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .admin-list-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .admin-list-filters { grid-template-columns: minmax(0, 1fr); }
 }
 .admin-list-filters select {
   min-height: 42px;
