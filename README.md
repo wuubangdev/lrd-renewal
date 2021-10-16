@@ -183,6 +183,7 @@ Có workflow `.github/workflows/verify.yml` cho typecheck, production build, bac
 
 - [Nhập nhanh cán bộ, nghiên cứu và chương trình đào tạo bằng Excel](docs/excel-import.md)
 
+- [QA frontend/backend/CMS và kết quả sửa](docs/qa-audit-2026-10-16.md)
 - [Trạng thái triển khai](docs/implementation-status.md)
 - [Hướng dẫn tài khoản và CMS trang chủ/menu](docs/identity-site.md)
 - [Hướng dẫn đào tạo/tuyển sinh, API và kiến trúc](docs/academics.md)
@@ -205,7 +206,7 @@ npm run seed:reference
 
 Seed qua API của bản Docker tại `http://localhost:8088`, dùng tài khoản Admin trong `.env`; chạy lại không tạo trùng hoặc ghi đè nội dung đã sửa trong CMS. Dữ liệu, giới hạn và cách tiếp tục khi gián đoạn: [Hướng dẫn nhập nguồn](docs/reference-import.md).
 
-Kiểm tra cả gói nguồn: `E2E_BASE_URL=http://localhost:8088 E2E_REFERENCE_DATA=1 npm run test:e2e` (PowerShell xem tài liệu). Backend có **39 test**, importer có **4 test** và bộ browser có **10 E2E** (gồm đối chiếu toàn bộ dữ liệu nguồn và chuyển động trên desktop/mobile).
+Kiểm tra cả gói nguồn: `E2E_BASE_URL=http://localhost:8088 E2E_REFERENCE_DATA=1 npm run test:e2e` (PowerShell xem tài liệu). Bộ kiểm thử hiện có **71 test backend**, **6 test importer** và **39 E2E** (gồm đối chiếu toàn bộ dữ liệu nguồn và chuyển động trên desktop/mobile).
 
 Trang public có slider tin tức điều khiển bằng nút, bàn phím hoặc vuốt; hero và nội dung xuất hiện theo nhịp cuộn, hover rõ, header bám đầu trang và nút về đầu trang. Không tự chuyển tin; khi thiết bị bật giảm chuyển động, hiệu ứng và cuộn mượt được tắt. Xem [Design system](docs/design-system.md).
 

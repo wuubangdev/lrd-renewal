@@ -1,6 +1,6 @@
 # Kế hoạch xây dựng lại website Bộ môn Tài nguyên Đất đai
 
-Ngày lập: 15/10/2026. Trạng thái: đã triển khai monorepo và luồng xuất bản đầu tiên; xem [trạng thái thực tế](implementation-status.md) và [hướng dẫn chạy](../README.md).
+Ngày lập: 15/10/2026. Trạng thái: đã triển khai các domain CMS/public, nhập liệu và bản dịch; xem [trạng thái thực tế](implementation-status.md) và [hướng dẫn chạy](../README.md).
 
 Xây dựng lại website https://lrd.ctu.edu.vn/ với giao diện giáo dục hiện đại và CMS quản trị nội dung. Kiến trúc gồm một frontend Next.js TypeScript App Router, một backend Spring Boot và một cơ sở dữ liệu PostgreSQL. Backend tổ chức thành modular monolith, mỗi module nghiệp vụ áp dụng kiến trúc lục giác.
 
@@ -33,6 +33,7 @@ Các mục dưới đây là phương án mặc định, có thể thay đổi t
 
 | Tài liệu                                      | Nội dung                                                                                     |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [QA 16/10/2026](qa-audit-2026-10-16.md) | Phát hiện về flow, logic, quyền và responsive; bản sửa cùng bằng chứng kiểm thử |
 | [Kiến trúc](architecture.md)                  | Sơ đồ hệ thống, package, dependency rule, routing, session, phân quyền, transaction và cache |
 | [Mô hình domain](domain-model.md)             | Ranh giới module, aggregate, value object, hành vi, bất biến và vòng đời xuất bản            |
 | [Dữ liệu và API](data-and-api.md)             | Schema PostgreSQL, revision, concurrency, hợp đồng REST, media, tìm kiếm và migration        |

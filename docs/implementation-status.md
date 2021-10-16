@@ -1,8 +1,8 @@
-# Trạng thái triển khai — 15/10/2026
+# Trạng thái triển khai — 16/10/2026
 
 ## Mốc hiện tại
 
-Đã triển khai monorepo, xuất bản trực tiếp, tài khoản/phân quyền/mật khẩu, CMS trang chủ/menu và Academics với CMS/public đào tạo–tuyển sinh.
+Đã triển khai monorepo, xuất bản trực tiếp, tài khoản/phân quyền/mật khẩu, CMS trang chủ/menu, Academics, Directory, Editorial, Research, nhập Word/Excel và bản dịch Anh bằng AI. Đợt QA hiện tại được ghi tại [report 16/10/2026](qa-audit-2026-10-16.md).
 
 | Hạng mục                                                             | Trạng thái                                                                                          |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -34,10 +34,10 @@
 ## Các quyết định của mốc đầu
 
 1. Upload trực tiếp multipart qua backend, kiểm tra và mã hóa lại ảnh rồi ghi S3. Chưa dùng presigned upload/session; port ObjectStorage cho phép mở rộng sau.
-2. Sáu chuyên mục cố định trong Publishing; UI quản lý taxonomy sẽ được bổ sung sau.
+2. Publishing có CMS quản lý chuyên mục; quyền quản lý thuộc Site, Author chỉ chọn chuyên mục có sẵn.
 3. Rich text là JSON theo tập node/mark được giới hạn ở domain và renderer. Trang chủ có typed block được quản lý trong Site; page builder tổng quát chưa triển khai.
 4. Trang chủ/menu hiện là dữ liệu CMS trong PostgreSQL, dùng cùng renderer để preview/public. Nội dung tiếng Việt ban đầu được seed từ template đã có.
-5. Có cấu trúc locale vi/en trong bài; UI hiện dùng tiếng Việt, chưa có màn quản lý bản dịch.
+5. Có locale vi/en và tạo bản nháp tiếng Anh bằng Gemini cho các đối tượng/bài viết. CMS thao tác bằng tiếng Việt; quản trị viên kiểm tra và đăng từng bản dịch.
 6. Bản đang sửa chỉ nằm trong bộ nhớ trình duyệt khi mất kết nối/xung đột. Có nút tải JSON để giữ bản đang nhập khi xung đột; chưa có đồng bộ offline.
 7. Thư viện và bộ chọn ảnh hỗ trợ tìm tên/phân trang 60 ảnh mỗi lần, giữ phạm vi quyền. Vòng đời xóa/thu gom tệp là bước tiếp.
 8. Giới hạn đăng nhập hiện ở bộ nhớ của một backend; cần kho giới hạn dùng chung nếu triển khai nhiều replica.
@@ -45,7 +45,7 @@
 10. Cấu hình Compose cung cấp bản local qua HTTP. Domain/TLS, backup được kiểm chứng, secret manager và giám sát production cần cấu hình theo môi trường thật.
 11. Phân quyền dùng ba vai trò cố định Admin/Editor/Author; chưa có UI tạo role tùy ý. Không xóa cứng account có lịch sử; dùng khóa/mở.
 12. Admin cấp và sao chép liên kết reset để gửi riêng. Chưa có SMTP/SSO. Tài khoản mới phải tự đặt mật khẩu trước khi đăng nhập.
-13. Home/Menu có bản vi/en độc lập. English là bản sao làm việc chưa công khai, cần dịch trước khi đăng. Chưa có giao diện dịch toàn bộ website.
+13. Home/Menu có bản vi/en độc lập và thao tác tạo nội dung Anh bằng AI; không tự động xuất bản bản dịch. Website public có nội dung và điều hướng tiếng Anh.
 14. Trang chủ/menu và Academics lưu nháp thủ công; cảnh báo rời trang khi chưa lưu và tải JSON dự phòng khi xung đột.
 15. Khung/học phần và kiểm định nằm trong snapshot JSONB chương trình. Contact là value object; quan hệ admission–program dùng bảng FK riêng trong schema Academics.
 16. Tài liệu khung/chứng nhận và cổng nộp hồ sơ dùng URL HTTPS; upload hiện hỗ trợ ảnh JPG/PNG. Chưa có PDF upload hoặc hồ sơ ứng viên nội bộ.
@@ -66,20 +66,21 @@ flowchart LR
 
 App Router tách layout. Proxy kiểm tra permission theo route bằng hint ký số; server DAL và API kiểm tra phiên thật. Publishing gọi Media, Site, Discovery, Audit qua API module trong cùng transaction khi đăng/gỡ. Site đọc bài và tài nguyên Academics qua Discovery.api để tránh vòng phụ thuộc; xuất bản snapshot/media usage/audit trong cùng transaction. Academics có hai aggregate và khóa transaction chung cho thao tác ghi, ngăn publish tuyển sinh chạy đua với retire chương trình. Route registry chia namespace articles/programs/admissions, giữ alias khi đổi slug.
 
-## Nghiệm thu
+## Nghiệm thu — 16/10/2026
 
-- Backend: **39 test đã qua** — 18 test domain, 3 test kiến trúc, 18 test tích hợp PostgreSQL. Có kiểm tra mốc mở/đóng, gia hạn giữ nháp riêng, khôi phục, minh chứng, quyền, xung đột publish/retire, liên kết Site và biên độ dài slug.
-- Frontend: Next route typegen, TypeScript, kiểm tra định dạng Prettier và production build đã qua.
-- Browser: **28 test E2E đã qua** trên bản Docker production, gồm luồng đào tạo/tuyển sinh, tài khoản và phân quyền, CMS bài viết/trang chủ/menu, tác giả và chia sẻ bài viết, trang nghiên cứu, dữ liệu nguồn, responsive và motion.
-- Hai Docker image đã build và khởi động lại thành công; migration V1–V14 đã áp dụng. Bản local chạy qua **localhost:8088**; hồ sơ E2E công khai đã được gỡ, không reset database/volume.
-- File test có thể chạy lại bằng các lệnh trong README.
+- Backend: **71/71 test qua**, gồm 28 test tích hợp PostgreSQL và 3 kiểm tra kiến trúc; importer **6/6 qua**.
+- Frontend: TypeScript, Prettier các file TS/TSX thay đổi và production build đã qua.
+- Browser: **39 kịch bản đã qua** — 38 trong lượt toàn bộ cuối, Academics qua sau sửa và chạy lại riêng trên Docker mới. Chi tiết bằng chứng và giới hạn nằm trong [QA report](qa-audit-2026-10-16.md).
+- Admin: 18 màn hình ở desktop và mobile, tổng 36 lượt không tràn ngang hoặc lỗi JavaScript.
+- API/Web đã build và khởi động lại thành công; migration V1–V15. Bản local chạy tại **localhost:8088**; dữ liệu test được dọn theo ID, không reset database/volume.
+- Gemini thật, Safari/Firefox, thiết bị di động thật và tải production chưa nằm trong lượt nghiệm thu này.
 
 ## Tiếp theo
 
-1. Audit viewer, quản lý taxonomy và vòng đời thu gom media.
+1. Audit viewer và vòng đời thu gom media/nháp import hoặc dịch thất bại.
 2. CMS trang tĩnh tổng quát; mở rộng design system qua các template giáo dục.
-3. Directory, Research và tài liệu sinh viên theo domain model.
-4. Nhập các danh mục vào domain Directory/Research riêng; toàn văn đã quản trị được qua Publishing.
+3. Mở rộng kho tài liệu sinh viên và loại tệp upload khi có yêu cầu; Directory và Research đã triển khai.
+4. Đối soát nội dung mới phát sinh với nguồn; giữ các sửa đổi do biên tập viên thực hiện trong CMS.
 5. Chuẩn hóa bản dịch, observability, vận hành/backup/restore và phát hành production.
 
 Kế hoạch chi tiết vẫn ở các tài liệu hiện có; mốc này không đánh dấu toàn bộ website đã hoàn thành.
