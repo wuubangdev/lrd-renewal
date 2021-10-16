@@ -1,0 +1,885 @@
+{
+  "articles": 97,
+  "totals": {
+    "whitespaceNodes": 7861,
+    "splitParagraphs": 21,
+    "demotedHeadings": 15,
+    "promotedHeadings": 280,
+    "manualBullets": 251
+  },
+  "records": [
+    {
+      "key": "article-1",
+      "slug": "gioi-thieu-bo-mon-tai-nguyen-dat-dai",
+      "whitespaceNodes": 5,
+      "splitParagraphs": 3,
+      "demotedHeadings": 13,
+      "promotedHeadings": 10,
+      "manualBullets": 20
+    },
+    {
+      "key": "article-2",
+      "slug": "doi-ngu-bo-mon-tai-nguyen-dat-dai",
+      "whitespaceNodes": 12,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-742edb931527",
+      "slug": "dai-hoc-quan-ly-dat-dai-dat-chuan-quoc-te-aun-qa-742edb",
+      "whitespaceNodes": 37,
+      "splitParagraphs": 1,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 19
+    },
+    {
+      "key": "full-e448e85e3495",
+      "slug": "cao-hoc-quan-ly-dat-dai-e448e8",
+      "whitespaceNodes": 20,
+      "splitParagraphs": 0,
+      "demotedHeadings": 1,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-a1f3d5ad8e1c",
+      "slug": "tien-si-quan-ly-dat-dai-a1f3d5",
+      "whitespaceNodes": 13,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-f69c5c040ed8",
+      "slug": "tuyen-sinh-nganh-quy-hoach-vung-va-do-thi-2026-f69c5c",
+      "whitespaceNodes": 12,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 17
+    },
+    {
+      "key": "article-9",
+      "slug": "phong-thi-nghiem-gis-va-vien-tham",
+      "whitespaceNodes": 6,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 3,
+      "manualBullets": 7
+    },
+    {
+      "key": "article-10",
+      "slug": "phong-thi-nghiem-tai-nguyen-dat-dai",
+      "whitespaceNodes": 30,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 11,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-11",
+      "slug": "trang-thiet-bi-phuc-vu-dao-tao-va-nghien-cuu",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-13",
+      "slug": "bao-dam-chat-luong-voi-aun-qa",
+      "whitespaceNodes": 10,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-14",
+      "slug": "danh-muc-minh-chung-aun-qa",
+      "whitespaceNodes": 3,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-15",
+      "slug": "quy-cach-chuong-trinh-quan-ly-dat-dai",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 8
+    },
+    {
+      "key": "article-16",
+      "slug": "danh-gia-ngoai-aun-qa-chuong-trinh-quan-ly-dat-dai",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-17",
+      "slug": "khai-mac-danh-gia-aun-qa",
+      "whitespaceNodes": 16,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-18",
+      "slug": "be-mac-danh-gia-aun-qa",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-19",
+      "slug": "ghi-nhan-dong-gop-cho-dot-danh-gia-aun-qa",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-21",
+      "slug": "hop-tac-nghien-cuu-quoc-te",
+      "whitespaceNodes": 4,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-22",
+      "slug": "de-tai-nghien-cuu-trong-nuoc",
+      "whitespaceNodes": 7,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-23",
+      "slug": "de-tai-nghien-cuu-cap-co-so",
+      "whitespaceNodes": 20,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-25",
+      "slug": "cong-bo-khoa-hoc-trong-nuoc",
+      "whitespaceNodes": 24,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 12,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-26",
+      "slug": "cong-bo-khoa-hoc-quoc-te",
+      "whitespaceNodes": 108,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 4,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-27",
+      "slug": "giao-trinh-da-xuat-ban",
+      "whitespaceNodes": 15,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-28",
+      "slug": "bai-bao-hoi-thao-trong-nuoc",
+      "whitespaceNodes": 5,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-29",
+      "slug": "bai-bao-hoi-thao-quoc-te",
+      "whitespaceNodes": 6,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 6,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-33",
+      "slug": "mau-va-huong-dan-trinh-bay-luan-van",
+      "whitespaceNodes": 1,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 1
+    },
+    {
+      "key": "article-35",
+      "slug": "mang-luoi-cuu-sinh-vien",
+      "whitespaceNodes": 16,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-36",
+      "slug": "cuu-sinh-vien-dong-hanh-cung-nguoi-hoc",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-37",
+      "slug": "hoat-dong-cong-dong-cua-cuu-sinh-vien",
+      "whitespaceNodes": 1,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-38",
+      "slug": "nghien-cuu-khoa-hoc-sinh-vien",
+      "whitespaceNodes": 59,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-40",
+      "slug": "gop-y-va-phan-hoi-cua-sinh-vien",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 4
+    },
+    {
+      "key": "article-42",
+      "slug": "hoi-thao-quan-ly-dat-dai-2019",
+      "whitespaceNodes": 148,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-43",
+      "slug": "hoi-thao-vien-tham-chau-a-acrs-2021",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-45",
+      "slug": "hoi-thao-khoa-hoc-dat-va-quan-ly-dat-dai-2020",
+      "whitespaceNodes": 244,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 8
+    },
+    {
+      "key": "article-46",
+      "slug": "hoi-thao-gis-ideas-2018",
+      "whitespaceNodes": 10,
+      "splitParagraphs": 2,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-48",
+      "slug": "hoi-thao-icggs-2023-tai-dai-hoc-can-tho",
+      "whitespaceNodes": 1,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-5d7705d17fdc",
+      "slug": "tuyen-sinh-tien-si-quan-ly-dat-dai-nam-2026-dot-2-5d7705",
+      "whitespaceNodes": 3,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 3,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-aaa5bd674264",
+      "slug": "tuyen-sinh-thac-si-quan-ly-dat-dai-nam-2026-dot-2-aaa5bd",
+      "whitespaceNodes": 15,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-d78ef4f5c8a1",
+      "slug": "tuyen-sinh-dai-hoc-quan-ly-dat-dai-nam-2026-d78ef4",
+      "whitespaceNodes": 22,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 22
+    },
+    {
+      "key": "article-57",
+      "slug": "sinh-vien-trao-doi-hoc-tap-tai-thai-lan-nam-2026",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-58",
+      "slug": "chuong-trinh-trao-doi-sinh-vien-quoc-te",
+      "whitespaceNodes": 12,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-6eecd0347f1d",
+      "slug": "hoat-dong-sinh-vien-6eecd0",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-60",
+      "slug": "bao-ve-luan-an-cua-ncs-nguyen-minh-thong-nam-2022",
+      "whitespaceNodes": 14,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-61",
+      "slug": "trao-bang-sau-dai-hoc-nganh-quan-ly-dat-dai-nam-2022",
+      "whitespaceNodes": 4,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-e756e3bbb83d",
+      "slug": "ke-hoach-khung-thuc-hien-luan-van-tot-nghiep-hoc-ky-2-2021-2022-e756e3",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-63",
+      "slug": "ke-hoach-luan-van-hoc-ky-1-nam-hoc-2022-2023",
+      "whitespaceNodes": 189,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-64",
+      "slug": "thong-bao-luan-van-hoc-ky-2-nam-hoc-2021-2022",
+      "whitespaceNodes": 12,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 3
+    },
+    {
+      "key": "article-66",
+      "slug": "ke-hoach-giang-day-hoc-ky-2-nam-hoc-2021-2022",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-67",
+      "slug": "lich-thi-hoc-ky-1-thong-bao-luu-tru-nam-2021",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-68",
+      "slug": "lich-bao-cao-luan-van-hoc-ky-1-nam-hoc-2021-2022",
+      "whitespaceNodes": 20,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 3
+    },
+    {
+      "key": "article-69",
+      "slug": "hop-mat-ngay-truyen-thong-nganh-nam-2021",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 11
+    },
+    {
+      "key": "article-70",
+      "slug": "hoc-bong-cuu-sinh-vien-dip-ky-niem-nganh-nam-2024",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 1,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-71",
+      "slug": "hoc-bong-don-tan-sinh-vien-nam-2024",
+      "whitespaceNodes": 47,
+      "splitParagraphs": 1,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 6
+    },
+    {
+      "key": "article-72",
+      "slug": "co-hoi-viec-lam-tai-chi-nhanh-van-phong-dang-ky-dat-dai",
+      "whitespaceNodes": 6,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 4,
+      "manualBullets": 3
+    },
+    {
+      "key": "article-73",
+      "slug": "tuyen-dung-ky-su-tai-don-vi-tu-van-an-giang",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-74",
+      "slug": "tuyen-dung-tai-cong-ty-do-dac-dien-thinh",
+      "whitespaceNodes": 5,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-75",
+      "slug": "co-hoi-thuc-tap-tai-ubnd-xa-phu-quoi",
+      "whitespaceNodes": 1,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-76",
+      "slug": "co-hoi-ky-thuat-trac-dia-tai-vdcd",
+      "whitespaceNodes": 16,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-77",
+      "slug": "tuyen-dung-tai-cong-ty-do-dac-dong-hai",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-78",
+      "slug": "thong-bao-tuyen-ky-su-do-dac-nam-2024",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 1,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-79",
+      "slug": "ky-niem-81-nam-ngay-truyen-thong-nganh-quan-ly-dat-dai",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-80",
+      "slug": "bo-mon-tham-gia-hoi-thao-quan-ly-dat-dai-toan-quoc-2026",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-81",
+      "slug": "ky-niem-ngay-truyen-thong-nganh-nam-2024",
+      "whitespaceNodes": 9,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-82",
+      "slug": "tu-van-tuyen-sinh-tai-dai-hoc-can-tho-nam-2026",
+      "whitespaceNodes": 0,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "article-83",
+      "slug": "chao-don-tan-sinh-vien-khoa-50",
+      "whitespaceNodes": 7,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 2
+    },
+    {
+      "key": "full-d5c25b569666",
+      "slug": "pgs-ts-pham-thanh-vu-d5c25b",
+      "whitespaceNodes": 353,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 9,
+      "manualBullets": 1
+    },
+    {
+      "key": "full-252429f3efac",
+      "slug": "pgs-ts-phan-kieu-diem-252429",
+      "whitespaceNodes": 400,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 17,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-56b6651b53f7",
+      "slug": "pgs-ts-truong-chi-quang-56b665",
+      "whitespaceNodes": 329,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 4
+    },
+    {
+      "key": "full-e17c76384c66",
+      "slug": "gs-ts-vo-quang-minh-e17c76",
+      "whitespaceNodes": 712,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 13,
+      "manualBullets": 1
+    },
+    {
+      "key": "full-e4845b8b5550",
+      "slug": "pgs-ts-nguyen-thi-hong-diep-e4845b",
+      "whitespaceNodes": 180,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 1
+    },
+    {
+      "key": "full-d9fe0d1ae3c7",
+      "slug": "pgs-ts-vo-quoc-tuan-d9fe0d",
+      "whitespaceNodes": 547,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 19,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-32358f2dc96a",
+      "slug": "ts-huynh-thi-thu-huong-32358f",
+      "whitespaceNodes": 360,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 5,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-cc930e8610ae",
+      "slug": "ths-nguyen-thi-song-binh-cc930e",
+      "whitespaceNodes": 443,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 6,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-2e429e765b4b",
+      "slug": "ts-tran-van-hung-2e429e",
+      "whitespaceNodes": 362,
+      "splitParagraphs": 3,
+      "demotedHeadings": 0,
+      "promotedHeadings": 5,
+      "manualBullets": 1
+    },
+    {
+      "key": "full-b85cf6cd5cba",
+      "slug": "ts-nguyen-huu-kiet-b85cf6",
+      "whitespaceNodes": 250,
+      "splitParagraphs": 2,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-98c0f8e5e57d",
+      "slug": "ths-vuong-tuan-huy-98c0f8",
+      "whitespaceNodes": 316,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 5,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-29c1a902bf2e",
+      "slug": "ths-nguyen-thi-ha-mi-29c1a9",
+      "whitespaceNodes": 203,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 17,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-fb851fc45f44",
+      "slug": "ths-phan-hoang-vu-fb851f",
+      "whitespaceNodes": 343,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-0389f8db5b74",
+      "slug": "ths-thai-thanh-du-0389f8",
+      "whitespaceNodes": 303,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 15,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-31ca669b9ee1",
+      "slug": "ths-ly-trung-nguyen-31ca66",
+      "whitespaceNodes": 452,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 9,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-a459f82726a3",
+      "slug": "ths-nguyen-kieu-diem-a459f8",
+      "whitespaceNodes": 254,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 6,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-a342a79fc065",
+      "slug": "ks-nguyen-trong-nguyen-a342a7",
+      "whitespaceNodes": 13,
+      "splitParagraphs": 2,
+      "demotedHeadings": 0,
+      "promotedHeadings": 11,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-1cb5d3ad51b5",
+      "slug": "dai-hoc-quan-ly-dat-dai-1cb5d3",
+      "whitespaceNodes": 37,
+      "splitParagraphs": 1,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 19
+    },
+    {
+      "key": "full-8f166d800aad",
+      "slug": "dai-hoc-lam-sinh-8f166d",
+      "whitespaceNodes": 22,
+      "splitParagraphs": 3,
+      "demotedHeadings": 0,
+      "promotedHeadings": 7,
+      "manualBullets": 48
+    },
+    {
+      "key": "full-f07ef9c87327",
+      "slug": "to-chuc-hoi-thao-f07ef9",
+      "whitespaceNodes": 9,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-eef5cb18e5f0",
+      "slug": "xuat-ban-quoc-te-eef5cb",
+      "whitespaceNodes": 60,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 12,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-3b195ed24f3e",
+      "slug": "du-an-hop-tac-quoc-te-3b195e",
+      "whitespaceNodes": 18,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-0caf0219fceb",
+      "slug": "hoi-thao-cach-mang-cong-nghiep-4-0-trong-nong-nghiep-va-quan-ly-khai-thac-tai-nguyen-dat-dai-2021-0caf02",
+      "whitespaceNodes": 27,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 12
+    },
+    {
+      "key": "full-495665847a23",
+      "slug": "hoi-thao-cong-nghe-so-trong-khai-thac-su-dung-va-quan-ly-tai-nguyen-dat-dai-theo-huong-ben-vung-2022-495665",
+      "whitespaceNodes": 211,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 13
+    },
+    {
+      "key": "full-bda5de3f6607",
+      "slug": "hoi-nghi-khoa-hoc-dat-2018-bda5de",
+      "whitespaceNodes": 175,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 9
+    },
+    {
+      "key": "full-fdd6fb596fa1",
+      "slug": "hoi-thao-lam-sinh-2018-fdd6fb",
+      "whitespaceNodes": 187,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 2,
+      "manualBullets": 8
+    },
+    {
+      "key": "full-62c0cc54883e",
+      "slug": "thong-bao-seminar-nghien-cuu-phat-trien-va-ung-dung-thiet-bi-bay-khong-nguoi-lai-tai-vien-cong-nghe-chau-a-62c0cc",
+      "whitespaceNodes": 2,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-642e3a78f4ed",
+      "slug": "international-cooperations-642e3a",
+      "whitespaceNodes": 4,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-2b5244d4c28a",
+      "slug": "conferences-2b5244",
+      "whitespaceNodes": 5,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-c11ca56fc1fe",
+      "slug": "publications-c11ca5",
+      "whitespaceNodes": 62,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 12,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-50aaa7a64fb7",
+      "slug": "thong-bao-seminar-cac-phuong-phap-lap-ban-do-va-khai-thac-du-lieu-tai-nguyen-khong-gian-dat-dai-50aaa7",
+      "whitespaceNodes": 4,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-02b2fb02f7d1",
+      "slug": "khoa-moi-truong-va-tai-nguyen-thien-nhien-chao-don-tan-sinh-vien-khoa-47-hinh-thuc-truc-tuyen-02b2fb",
+      "whitespaceNodes": 2,
+      "splitParagraphs": 2,
+      "demotedHeadings": 0,
+      "promotedHeadings": 0,
+      "manualBullets": 0
+    },
+    {
+      "key": "full-5b6773ccbc99",
+      "slug": "chao-don-tan-sinh-vien-quan-ly-dat-dai-khoa-47-5b6773",
+      "whitespaceNodes": 1,
+      "splitParagraphs": 0,
+      "demotedHeadings": 0,
+      "promotedHeadings": 1,
+      "manualBullets": 0
+    }
+  ]
+}
