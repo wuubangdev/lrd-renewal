@@ -30,8 +30,13 @@ export async function EditorialPublicList({
   const items = await serverApi<PublicEditorial[]>(
     `/public/editorial?kind=${kind}&locale=${locale}`,
   );
+  if (compact && !items.length) return null;
+  const CardHeading = compact ? "h3" : "h2";
   return (
-    <section className={compact ? "editorial-public compact" : "container editorial-public"}>
+    <section
+      className={compact ? "editorial-public compact news-featured" : "container editorial-public"}
+      aria-label={compact ? (locale === "en" ? "Featured news" : "Tin nổi bật") : undefined}
+    >
       {!compact && (
         <>
           <p className="eyebrow">
@@ -56,7 +61,6 @@ export async function EditorialPublicList({
       {compact && items.length > 0 && (
         <div className="section-heading">
           <div>
-            <p className="eyebrow">{locale === "en" ? "NEWS" : "HỒ SƠ TIN TỨC"}</p>
             <h2>{locale === "en" ? "Featured news" : "Tin nổi bật"}</h2>
           </div>
         </div>
@@ -75,22 +79,24 @@ export async function EditorialPublicList({
                     : editorialThumbnail(kind)
                 }
                 alt={item.details.thumbnailId ? item.details.thumbnailAlt : ""}
-                loading="lazy"
+                loading={compact ? "eager" : "lazy"}
               />
             </Link>
             <div className="editorial-public-copy">
-              <small>
-                {kind === "EVENT"
-                  ? date(item.details.startsOn, locale)
-                  : kind === "JOB"
-                    ? item.details.employer || item.details.position
-                    : editorialLabel(kind, locale)}
-              </small>
-              <h2>
+              {!compact && (
+                <small>
+                  {kind === "EVENT"
+                    ? date(item.details.startsOn, locale)
+                    : kind === "JOB"
+                      ? item.details.employer || item.details.position
+                      : editorialLabel(kind, locale)}
+                </small>
+              )}
+              <CardHeading>
                 <Link href={editorialDetailPath(kind, locale, item.details.slug)}>
                   {item.details.title}
                 </Link>
-              </h2>
+              </CardHeading>
               <p>{item.details.summary}</p>
               {kind === "EVENT" && item.details.location && (
                 <span className="editorial-meta">{item.details.location}</span>
@@ -101,24 +107,26 @@ export async function EditorialPublicList({
                   {date(item.details.deadline, locale)}
                 </span>
               )}
-              <div className="editorial-public-links">
-                <Link
-                  className="text-link"
-                  href={editorialDetailPath(kind, locale, item.details.slug)}
-                >
-                  {locale === "en" ? "View details ↗" : "Xem chi tiết ↗"}
-                </Link>
-                {item.details.externalUrl && (
-                  <a
+              {!compact && (
+                <div className="editorial-public-links">
+                  <Link
                     className="text-link"
-                    href={item.details.externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={editorialDetailPath(kind, locale, item.details.slug)}
                   >
-                    {locale === "en" ? "External link ↗" : "Liên kết ngoài ↗"}
-                  </a>
-                )}
-              </div>
+                    {locale === "en" ? "View details ↗" : "Xem chi tiết ↗"}
+                  </Link>
+                  {item.details.externalUrl && (
+                    <a
+                      className="text-link"
+                      href={item.details.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {locale === "en" ? "External link ↗" : "Liên kết ngoài ↗"}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </article>
         ))}

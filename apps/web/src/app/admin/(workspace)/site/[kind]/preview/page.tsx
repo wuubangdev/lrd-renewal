@@ -2,8 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requirePermission, serverApi } from "@/lib/server-api";
 import { HomeRenderer } from "@/features/site/home-renderer";
-import { PublicNavigation } from "@/features/site/public-navigation";
-import { Brand } from "@/components/brand";
+import { HeaderContent } from "@/components/public-header";
+import { FooterContent } from "@/components/public-footer";
 import type { SiteRender, HomeComposition, NavigationMenu } from "@/features/site/contracts";
 export default async function SitePreview({
   params,
@@ -29,23 +29,11 @@ export default async function SitePreview({
       {kind === "home" ? (
         <>
           <HomeRenderer data={data as SiteRender<HomeComposition>} preview />
-          <footer id="lien-he" className="public-footer">
-            <div className="container">
-              <h2>Liên hệ</h2>
-              <p>{(data.content as HomeComposition).footer.description}</p>
-              <p>{(data.content as HomeComposition).footer.address}</p>
-              <p>{(data.content as HomeComposition).footer.email}</p>
-            </div>
-          </footer>
+          <FooterContent locale={locale} footer={(data.content as HomeComposition).footer} />
         </>
       ) : (
         <>
-          <header className="public-header">
-            <div className="container header-inner">
-              <Brand />
-              <PublicNavigation data={data as SiteRender<NavigationMenu>} />
-            </div>
-          </header>
+          <HeaderContent data={data as SiteRender<NavigationMenu>} />
           <div className="admin-content">
             <h1>Xem trước menu</h1>
             <p>

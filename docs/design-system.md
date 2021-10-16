@@ -14,7 +14,11 @@ CSS public nằm ở `apps/web/src/app/public-design.css`, nhập sau CSS nền 
 
 Trang lưu trữ tin dùng hàng biên tập với thumbnail vừa phải, tiêu đề và metadata là trọng tâm; trên điện thoại ảnh thu về ô nhỏ bên phải để đọc được nhiều tin hơn mỗi màn hình. Bộ lọc có đường phân cách nhẹ, không dùng nền hộp xám. Slider tin nổi bật trên trang chủ tiếp tục dùng ảnh lớn và bố cục riêng.
 
+Trang tin tức có một H1 ở đầu, tiếp đến bộ lọc, tin nổi bật và danh sách bài viết; tất cả nằm trong container cùng chiều rộng với header. Tin nổi bật chỉ hiện ở trang đầu khi chưa lọc; desktop chia ba cột, mobile dùng hàng ảnh 104px kèm tiêu đề và tóm tắt. Khi lọc, hiển thị kết quả cùng thao tác xóa bộ lọc, không chen các tin nổi bật không liên quan. Phân trang xuống hàng có thứ tự trên màn hình hẹp. Tiêu đề, bộ lọc, trạng thái rỗng và phân trang có nội dung Việt/Anh tương ứng.
+
 Logo và tên đơn vị phải được lấy từ tài nguyên chính thức. Bảng màu dưới đây là đề xuất thiết kế, không khẳng định là bộ màu nhận diện chính thức CTU. Ảnh dùng từ nguồn của đơn vị có quyền sử dụng; không dựng cảnh hoặc số liệu để mô phỏng thành tích thật.
+
+Thumbnail mặc định dùng bộ ảnh minh họa tạo bằng `image_gen`, ánh xạ theo 11 loại tại `src/lib/default-thumbnails.ts`. Đào tạo dùng hoạt động khảo sát thực địa; phòng thí nghiệm và nghiên cứu dùng mẫu đất/thực hành khoa học; hội thảo dùng không gian học thuật; tin tức dùng đời sống sinh viên; tuyển sinh và tuyển dụng dùng tư vấn học tập/nghề nghiệp; học liệu dùng sách, công bố và tài liệu. Ảnh cán bộ mặc định là minh họa ẩn danh. Đây là ảnh chung khi chưa có thumbnail CMS, không phải tư liệu về cán bộ hoặc hoạt động cụ thể của CTU. Các tệp WebP được tối ưu ở chiều rộng 1200px, ảnh cán bộ 768px; prompt gốc và thông số nằm trong `docs/assets/default-thumbnails.json`.
 
 ## Hệ thống token
 
@@ -53,6 +57,12 @@ Menu chính khoảng sáu mục: **Giới thiệu, Đào tạo, Tuyển sinh, Ng
 
 Hội thảo theo năm nằm trong danh mục/sự kiện và trang lưu trữ. Mobile dùng drawer có accordion tối đa hai tầng, hỗ trợ bàn phím và focus trap. Route hiện hành có nhãn rõ; không chỉ đổi màu nhẹ.
 
+Header desktop có hai tầng: nhận diện CTU/tên bộ môn và liên hệ/đổi ngôn ngữ trên nền trắng; thanh menu navy phía dưới dùng điểm nhấn mint đồng bộ footer. Menu nằm trên một hàng, kể cả tablet rộng hơn 900px. Với chuột hỗ trợ hover, dropdown mở sau 100ms và chờ đóng 260ms khi rời vùng menu; quay lại sẽ hủy đóng. Panel nối sát dưới thanh menu để con trỏ đi thẳng xuống được, không khởi động lại hiệu ứng khi rê trong cùng một nhóm. Click đầu sau khi hover giữ menu mở; click tiếp theo đóng, Enter và Escape vẫn hoạt động. Thiết bị cảm ứng dùng tap và accordion. Panel căn theo mục cha và tự dịch vào trong container khi gần mép trang; danh sách dài cuộn trong panel. Chỉ một dropdown mở tại một thời điểm; Escape, chuyển focus ra ngoài nhóm hoặc bấm ngoài đều đóng panel.
+
+Từ 900px trở xuống, menu thành ngăn navy bên phải với danh sách con dạng accordion, liên hệ và đổi ngôn ngữ bên trong. Ngăn có ngữ nghĩa dialog, giữ focus, khóa cuộn nền và đặt nội dung phía sau ở trạng thái inert. Đóng bằng nút, Escape hoặc bấm nền sẽ khôi phục focus vào nút menu; chọn link hay chuyển breakpoint khôi phục tương tác của trang. Nhận diện, menu và trạng thái hover/focus dùng chung giữa public và bản xem trước menu CMS. Chuyển động mở panel/ngăn và xoay chevron ngắn, tắt khi bật giảm chuyển động.
+
+Chiều cao header thực được theo dõi qua `ResizeObserver` và token `--public-header-height`. Cuộn đến các mục nội dung và vị trí bám của mục lục/sidebar chừa đủ khoảng cách dưới header ở mọi breakpoint. Chuyển focus khi mở/đóng ngăn dùng `preventScroll` để giữ vị trí đọc.
+
 ## Bố cục trang chủ
 
 1. Header rõ logo, tên đơn vị, menu và tìm kiếm. Không dồn nhiều nút hành động lên cùng một hàng.
@@ -66,6 +76,12 @@ Hội thảo theo năm nằm trong danh mục/sự kiện và trang lưu trữ. 
 Mỗi section có một vai trò chính. Header và hero cùng nằm trong ngân sách chiều cao màn hình phổ biến; không chồng header lên hero 100vh rồi đẩy toàn bộ nội dung xuống dưới. Chữ trên ảnh có lớp nền/gradient tương phản vừa đủ; ảnh không được chứa chữ quảng cáo gây cạnh tranh với UI.
 
 Không dùng carousel tự chạy ở phần đầu. Không có grid dashboard, số liệu chưa xác minh hay dải logo trang trí để lấp chỗ trống.
+
+### Footer
+
+Footer dùng nền xanh navy, logo trường và tên bộ môn làm điểm nhận diện. Bốn cột trên desktop gồm nhận diện, học tập/nghiên cứu, thông tin bộ môn và liên hệ. Trên tablet bố cục hai cột; trên điện thoại nhận diện và liên hệ chiếm toàn hàng, hai nhóm đường dẫn nằm cạnh nhau. Chân trang dành cho bản quyền và cổng quản trị. Không lặp lại tiêu đề quảng bá lớn của section kết nối phía trên.
+
+Mô tả, địa chỉ và email tiếp tục lấy từ CMS theo ngôn ngữ. Public và bản xem trước trang chủ dùng chung `FooterContent`, để quản trị viên thấy đúng bố cục với dữ liệu đang chỉnh sửa. Link có vùng tương tác tối thiểu 44px, focus tương phản, hover không thay đổi kích thước hay vị trí; chuyển động mũi tên tắt khi bật giảm chuyển động. Các quy tắc footer được tập trung trong `public-design.css`.
 
 ## Template trang chi tiết
 

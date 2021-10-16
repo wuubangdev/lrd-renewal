@@ -72,6 +72,16 @@ test("chương trình trên trang chủ có thumbnail từ nội dung đã công
 test("trang lưu trữ tin ưu tiên tiêu đề và ảnh gọn trên mobile", async ({ page }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires published reference news");
   await page.goto("/vi/tin-tuc");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+  const header = (await page.locator(".public-header .container").boundingBox())!;
+  const featured = page.locator(".news-featured");
+  const featuredBox = (await featured.boundingBox())!;
+  expect(featuredBox.x).toBe(header.x);
+  expect(featuredBox.width).toBe(header.width);
+  const title = (await page.getByRole("heading", { level: 1 }).boundingBox())!;
+  const search = (await page.getByRole("search").boundingBox())!;
+  expect(search.y).toBeGreaterThan(title.y + title.height);
+  expect(featuredBox.y).toBeGreaterThan(search.y + search.height);
   const list = page.locator(".news-archive .news-grid");
   await expect(list.locator(".news-item")).toHaveCount(9);
   await expect(list).toHaveCSS("grid-template-columns", /\d/);
@@ -84,7 +94,51 @@ test("trang lưu trữ tin ưu tiên tiêu đề và ảnh gọn trên mobile", 
   const copy = await first.locator(".news-copy").boundingBox();
   expect(image!.width).toBe(92);
   expect(copy!.x).toBeLessThan(image!.x);
+  expect((await featured.boundingBox())!.height).toBeLessThan(650);
+  for (const width of [320, 768, 1024]) {
+    await page.setViewportSize({ width, height: 844 });
+    const bounds = (await featured.boundingBox())!;
+    expect(bounds.x).toBeGreaterThan(0);
+    expect(bounds.x + bounds.width).toBeLessThan(width);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
+      true,
+    );
+  }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
     true,
+  );
+});
+
+test("trang tin giữ phân trang trong màn hình nhỏ và hiển thị trạng thái tìm kiếm đúng", async ({
+  page,
+}) => {
+  test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires published reference news");
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.goto("/vi/tin-tuc?page=1");
+  await expect(page.locator(".news-featured")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Trang trước", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Trang sau", exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
+    true,
+  );
+  await page.getByLabel("Tìm kiếm bài viết", { exact: true }).fill("qa-khong-co-bai-viet-20261016");
+  await page.getByRole("button", { name: "Tìm kiếm", exact: true }).click();
+  await expect(page).not.toHaveURL(/page=1/);
+  await expect(
+    page.getByRole("heading", { name: "Không tìm thấy bài viết", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator(".news-featured")).toHaveCount(0);
+  await expect(page.getByRole("navigation", { name: "Phân trang", exact: true })).toHaveCount(0);
+  await page.getByRole("link", { name: "Xóa bộ lọc", exact: true }).click();
+  await expect(page.locator(".news-featured")).toHaveCount(1);
+  await expect(page.getByLabel("Tìm kiếm bài viết", { exact: true })).toHaveValue("");
+  await page.goto("/en/tin-tuc?q=qa-khong-co-bai-viet-20261016");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("News & activities");
+  await expect(
+    page.getByRole("heading", { name: "No matching articles", exact: true }),
+  ).toBeVisible();
+  await expect(page.getByRole("link", { name: "Clear filters", exact: true })).toHaveAttribute(
+    "href",
+    "/en/tin-tuc",
   );
 });

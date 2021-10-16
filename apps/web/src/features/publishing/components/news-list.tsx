@@ -11,17 +11,37 @@ export function NewsList({
   items,
   eagerFirst = false,
   categoryOptions = [],
+  locale = items[0]?.locale ?? "vi",
+  filtered = false,
 }: {
   items: ContentSummary[];
   eagerFirst?: boolean;
   categoryOptions?: ArticleCategory[];
+  locale?: string;
+  filtered?: boolean;
 }) {
   if (!items.length)
     return (
       <div className="empty-state">
         <FileText size={32} />
-        <h3>Chưa có bài viết</h3>
-        <p>Các thông tin mới của bộ môn sẽ được cập nhật tại đây.</p>
+        <h3>
+          {filtered
+            ? locale === "en"
+              ? "No matching articles"
+              : "Không tìm thấy bài viết"
+            : locale === "en"
+              ? "No articles yet"
+              : "Chưa có bài viết"}
+        </h3>
+        <p>
+          {filtered
+            ? locale === "en"
+              ? "Try another keyword or category."
+              : "Thử từ khóa khác hoặc chọn một chuyên mục khác."
+            : locale === "en"
+              ? "Department news and updates will appear here."
+              : "Các thông tin mới của bộ môn sẽ được cập nhật tại đây."}
+        </p>
       </div>
     );
   return (

@@ -116,7 +116,7 @@ export function NewsSlider({
           </div>
         </div>
       )}
-      <NewsList items={items} eagerFirst categoryOptions={categoryOptions} />
+      <NewsList items={items} eagerFirst categoryOptions={categoryOptions} locale={locale} />
     </div>
   );
 }
