@@ -23,9 +23,13 @@ test("bài viết còn ở dạng tự do đọc được trên điện thoại 
       const prose = document.querySelector<HTMLElement>(".article .prose");
       if (!prose) return null;
       const bodySize = parseFloat(getComputedStyle(prose).fontSize);
-      const oversizedParagraphs = [...prose.querySelectorAll<HTMLElement>("p")].filter(
-        (node) => parseFloat(getComputedStyle(node).fontSize) > bodySize + 0.5,
-      ).length;
+      const oversizedParagraphs = [...prose.querySelectorAll<HTMLElement>("p")].filter((node) => {
+        const isDepartmentLead =
+          !!node.closest(".article--department") && node === prose.firstElementChild;
+        return (
+          parseFloat(getComputedStyle(node).fontSize) > (isDepartmentLead ? 17 : bodySize + 0.5)
+        );
+      }).length;
       return {
         overflow: document.documentElement.scrollWidth - innerWidth,
         oversizedParagraphs,

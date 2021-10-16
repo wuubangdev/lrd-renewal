@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("menu nghiên cứu dẫn đến bản ghi và liên kết tác giả về cán bộ", async ({ page }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires imported research records");
   await page.goto("/vi");
-  const menu = page.getByRole("navigation", { name: /điều hướng|chính/i });
+  const menu = page.getByRole("navigation", { name: "Điều hướng chính", exact: true });
   await menu.locator("summary").filter({ hasText: "Nghiên cứu" }).click();
   await expect(menu.getByRole("link", { name: "Nghiên cứu", exact: true })).toHaveAttribute(
     "href",

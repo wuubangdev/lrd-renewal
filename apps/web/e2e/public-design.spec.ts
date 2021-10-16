@@ -8,12 +8,22 @@ test("giao diện public giữ tương phản và vị trí nút ổn định", 
   await expect(heroTitle).toHaveCSS("color", "rgb(255, 255, 255)");
   const primary = page.locator(".hero .button").first();
   await expect(primary).toHaveCSS("cursor", "pointer");
-  const before = await primary.boundingBox();
+  await primary.scrollIntoViewIfNeeded();
+  await expect(primary).toBeVisible();
+  const documentPosition = () =>
+    primary.evaluate((node) => {
+      const box = node.getBoundingClientRect();
+      return { x: box.x + scrollX, y: box.y + scrollY, width: box.width, height: box.height };
+    });
+  const before = await documentPosition();
   await primary.hover();
-  const after = await primary.boundingBox();
-  expect(before).not.toBeNull();
-  expect(after).not.toBeNull();
-  expect(Math.abs(after!.y - before!.y)).toBeLessThan(0.5);
+  await expect
+    .poll(async () => Math.abs((await documentPosition()).y - before.y))
+    .toBeLessThan(0.5);
+  const after = await documentPosition();
+  expect(Math.abs(after.x - before.x)).toBeLessThan(0.5);
+  expect(after.width).toBe(before.width);
+  expect(after.height).toBe(before.height);
 
   await page.goto("/vi/dao-tao");
   await expect(page.locator(".education-list-hero h1")).toHaveCSS("color", "rgb(255, 255, 255)");

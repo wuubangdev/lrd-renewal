@@ -1,7 +1,8 @@
 import { test, expect, type APIRequestContext } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { createHash } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import { recordFixture, runtimeDirectory } from "./fixtures";
 import type { RichNode } from "../src/lib/contracts";
 import { isStructuredReference } from "./reference-structured";
@@ -29,6 +30,7 @@ async function mutate(
     data,
     headers: {
       [csrf.headerName]: csrf.token,
+      "Idempotency-Key": randomUUID(),
       ...(version === undefined ? {} : { "If-Match": '"' + version + '"' }),
     },
   });
@@ -42,6 +44,9 @@ test("toàn văn: đối chiếu tất cả bài và ảnh; CMS sửa bảng, ch
 }) => {
   test.skip(process.env.E2E_REFERENCE_DATA !== "1", "Requires full source import");
   test.setTimeout(240000);
+  const { formatAboutArticle } = await import(
+    pathToFileURL(resolve(__dirname, "../../../scripts/reference/about-article.mjs")).href
+  );
   const images = new Set<string>(),
     publicArticles = new Map<string, any>();
   for (const item of coverage.sources) {
@@ -53,11 +58,23 @@ test("toàn văn: đối chiếu tất cả bài và ảnh; CMS sửa bảng, ch
     expect(response.status(), item.key).toBe(200);
     const article = await response.json();
     publicArticles.set(item.key, article);
-    expect(fingerprint(article.document), item.key).toBe(item.textHash);
+    // The department introduction was deliberately edited into the approved outline.
+    // All other source articles still use the original full-text fingerprint.
+    const edited =
+      record.content.slug === "gioi-thieu-bo-mon-tai-nguyen-dat-dai"
+        ? (formatAboutArticle(record.content.document) as RichNode)
+        : undefined;
+    expect(fingerprint(article.document), item.key).toBe(
+      edited ? fingerprint(edited) : item.textHash,
+    );
     const bodyImages = nodes(article.document).filter((n) =>
       ["image", "inlineImage"].includes(n.type),
     );
-    expect(bodyImages.length, item.key).toBe(item.images);
+    expect(bodyImages.length, item.key).toBe(
+      edited
+        ? nodes(edited).filter((n) => ["image", "inlineImage"].includes(n.type)).length
+        : item.images,
+    );
     for (const n of bodyImages) images.add(String(n.attrs!.assetId));
     expect(article.origin.publishedOn).toBe(record.content.origin.publishedOn);
   }

@@ -23,5 +23,5 @@ test("CMS exposes AI English draft creation for site content", async ({ page }) 
   const missingLink = await page.request.get(
     "/api/v1/admin/localization/links/ARTICLE/00000000-0000-0000-0000-000000000001",
   );
-  expect(missingLink.status()).toBe(204);
+  expect(missingLink.status()).toBe(404);
 });

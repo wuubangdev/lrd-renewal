@@ -12,8 +12,9 @@ test("bài giới thiệu giữ chiều rộng theo header và cỡ chữ thân 
   const bodySize = await page
     .locator(".article .prose")
     .evaluate((node) => parseFloat(getComputedStyle(node).fontSize));
-  const lines = page.locator(".article .prose > p").filter({ hasText: /^- / });
-  expect(await lines.count()).toBeGreaterThanOrEqual(11);
+  await expect(page.locator(".article .prose > h2")).toHaveCount(6);
+  const lines = page.locator(".article .prose > p:not(:first-child), .article .prose li p");
+  expect(await lines.count()).toBeGreaterThan(0);
   for (const line of await lines.all())
     expect(
       await line.evaluate((node) => parseFloat(getComputedStyle(node).fontSize)),
