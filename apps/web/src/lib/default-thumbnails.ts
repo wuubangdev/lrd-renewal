@@ -1,4 +1,4 @@
-/** Static artwork used only when an editorial asset has not been selected. */
+/** Generated editorial imagery used only when a CMS image has not been selected. */
 export type ThumbnailKind =
   | "program"
   | "admission"
@@ -13,7 +13,7 @@ export type ThumbnailKind =
   | "staff";
 
 export function defaultThumbnail(kind: ThumbnailKind): string {
-  return `/images/defaults/${kind}.svg`;
+  return `/images/defaults/${kind}.webp`;
 }
 
 export function researchThumbnail(kind: string): string {

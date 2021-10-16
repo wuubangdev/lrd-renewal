@@ -5,14 +5,14 @@ test("card dùng thumbnail theo loại khi thiếu ảnh và giữ ảnh thật"
 
   await page.goto("/vi/tuyen-dung");
   const job = page.locator(".editorial-public-card .editorial-public-image img").first();
-  await expect(job).toHaveAttribute("src", "/images/defaults/job.svg");
+  await expect(job).toHaveAttribute("src", "/images/defaults/job.webp");
   await expect
     .poll(() => job.evaluate((image: HTMLImageElement) => image.naturalWidth))
     .toBeGreaterThan(0);
 
   await page.goto("/vi/nghien-cuu/giao-trinh");
   const textbook = page.locator(".research-card-image img").first();
-  await expect(textbook).toHaveAttribute("src", "/images/defaults/textbook.svg");
+  await expect(textbook).toHaveAttribute("src", "/images/defaults/textbook.webp");
   await expect
     .poll(() => textbook.evaluate((image: HTMLImageElement) => image.naturalWidth))
     .toBeGreaterThan(0);
@@ -35,7 +35,7 @@ test("card dùng thumbnail theo loại khi thiếu ảnh và giữ ảnh thật"
   expect(withoutPortrait).toBeTruthy();
   await page.goto("/vi/can-bo");
   const staff = page.locator(`.staff-directory-card[href$="/${withoutPortrait.details.slug}"] img`);
-  await expect(staff).toHaveAttribute("src", "/images/defaults/staff.svg");
+  await expect(staff).toHaveAttribute("src", "/images/defaults/staff.webp");
   await staff.scrollIntoViewIfNeeded();
   await expect
     .poll(() => staff.evaluate((image: HTMLImageElement) => image.naturalWidth))

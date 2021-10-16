@@ -1,0 +1,95 @@
+{
+  "generator": "Built-in image_gen tool",
+  "generatedAt": "2026-10-16",
+  "purpose": "Generic education imagery used only when a CMS thumbnail is absent. The staff image is an anonymous illustration, not a real portrait.",
+  "assets": [
+    {
+      "kind": "program",
+      "file": "/images/defaults/program.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 90532,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: two university students studying land surveying at the edge of lush Vietnamese rice paddies, viewed from behind at a respectful distance, using a modern survey tripod and an open field notebook. Low foreground vegetation, a clear survey instrument, distant trees, a bright overcast sky. Education and field learning are the visual focus."
+    },
+    {
+      "kind": "laboratory",
+      "file": "/images/defaults/laboratory.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 77478,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: close editorial photograph of environmental science learning in a bright university soil laboratory. A student's gloved hands gently hold a soil sample over a clean tray; soil cores, clear glass sample jars and a microscope are visible on the bench. Soft leafy greenery outside a window, thoughtful real laboratory composition. No faces in focus."
+    },
+    {
+      "kind": "event",
+      "file": "/images/defaults/event.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 64780,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: a university academic seminar in a contemporary lecture hall, viewed from the back through a few softly focused rows of attentive students toward a presenter and a large screen with simple abstract environmental diagrams and no readable lettering. Modest realistic room, daylight from side windows, thoughtful academic exchange, not a corporate sales conference."
+    },
+    {
+      "kind": "admission",
+      "file": "/images/defaults/admission.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 67536,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: a university student admissions consultation, close view of a welcoming academic adviser and a prospective adult student seated at a light wooden desk, hands arranging a plain application folder and a campus brochure without readable text. Student backpack beside the chair, bright leafy campus visible through windows. Faces out of focus and secondary; calm, approachable education setting."
+    },
+    {
+      "kind": "research",
+      "file": "/images/defaults/research.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 97096,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: environmental field research in the Vietnamese Mekong Delta, close-up of hands placing a cylindrical soil core and fresh roots into an open wooden sample tray on a portable field workbench. A field notebook with simple soil-layer sketches and a small magnifier nearby, green rice fields and a water channel gently blurred behind. The core and specimen are central, highly realistic scientific materials."
+    },
+    {
+      "kind": "publication",
+      "file": "/images/defaults/publication.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 114252,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: a carefully composed overhead university research desk, an open scholarly journal showing simple soil-profile diagrams, a leaf and a small landscape map, with a pair of reading glasses and a navy notebook. A few understated printed sheets show charts rather than legible text. Natural morning light across off-white paper, academic publishing and sharing knowledge as the theme. Not a corporate business report."
+    },
+    {
+      "kind": "textbook",
+      "file": "/images/defaults/textbook.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 101746,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: a large open university geography and environmental science textbook on a light oak library table, beautifully printed colorful landscape cross-section and a soil-horizon diagram occupying the visible pages, with a short neat stack of navy and green cloth-bound textbooks beside it. Sunlit reading room and bookshelves softly blurred behind. Focus on the open book; no legible title or lettering."
+    },
+    {
+      "kind": "document",
+      "file": "/images/defaults/document.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 90122,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: academic study resources neatly arranged on a light oak library table: an open off-white ring binder holding worksheets with simple land-map illustrations, a few clipped study handouts, a navy folder and a pen. Warm natural window light, blurred library shelving behind, practical and inviting educational materials. No official seal, no certificate design, no readable writing."
+    },
+    {
+      "kind": "news",
+      "file": "/images/defaults/news.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 100772,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: a candid campus learning moment at a green contemporary Vietnamese university courtyard, a small group of adult university students seen from behind and three-quarter distance discussing an open notebook and a large environmental field map at an outdoor table. Leafy trees and a modest academic building frame the scene, optimistic everyday campus life. Faces secondary and indistinct; no signs or branding."
+    },
+    {
+      "kind": "job",
+      "file": "/images/defaults/job.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 78016,
+      "prompt": "Use case: photorealistic-natural. Asset type: one standalone editorial website thumbnail for a Vietnamese land resources university department. Create a polished, natural-looking educational photograph, landscape 16:9 composition. Cohesive set art direction: authentic academic work, soft daylight, natural greens, muted navy and warm off-white, realistic materials, calm uncluttered framing, no dramatic filters. Keep the principal subject central and legible when cropped to a card. No text overlays, no logos, no watermarks, no UI frames, no collages, no named institution or identifiable real person. This is generic illustrative imagery, not documentation of a real event. Subject: university career guidance for an environmental science internship, close editorial view of an adult graduating student and an academic mentor at a bright campus office desk reviewing a portfolio with a landscape map and simple field project diagrams. Navy laptop closed at the side, student notebook, plant by the window. Welcoming professional transition from learning to work, hands and portfolio in focus, faces outside the crop."
+    },
+    {
+      "kind": "staff",
+      "file": "/images/defaults/staff.webp",
+      "width": 768,
+      "height": 1024,
+      "bytes": 34792,
+      "prompt": "Use case: illustration-story. Asset type: a neutral anonymous faculty portrait placeholder for a Vietnamese university education website, portrait 3:4 composition. Primary request: a refined flat editorial illustration of an anonymous academic, head and shoulders centered, wearing an understated navy jacket over an off-white top, simplified neutral head shape with NO facial features, NO identifiable real person and NO gender-specific styling. A subtle abstract bookshelf and a small sage-green plant in the distant background suggest an academic office. Matte warm ivory paper background, restrained navy and sage colors, clean elegant shapes, a little natural paper grain, balanced contemporary university visual identity. Deliberately recognizable as a neutral placeholder illustration. No 3D clay, no photorealistic blank face, no eyes, no text, no watermark, no circles, no UI frame, no logo."
+    }
+  ]
+}
