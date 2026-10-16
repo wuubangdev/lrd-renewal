@@ -1,10 +1,9 @@
-FROM eclipse-temurin:21-jdk AS build
+FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /workspace
-COPY apps/api/.mvn .mvn
-COPY apps/api/mvnw apps/api/pom.xml ./
-RUN chmod +x mvnw && ./mvnw -B -DskipTests dependency:go-offline
+COPY apps/api/pom.xml ./
+RUN mvn -B -DskipTests dependency:go-offline
 COPY apps/api/src src
-RUN ./mvnw -B -Dmaven.test.skip=true package
+RUN mvn -B -Dmaven.test.skip=true package
 
 FROM eclipse-temurin:21-jre
 WORKDIR /app
