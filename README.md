@@ -189,6 +189,7 @@ Có workflow `.github/workflows/verify.yml` cho typecheck, production build, bac
 - [QA frontend/backend/CMS và kết quả sửa](docs/qa-audit-2026-10-16.md)
 - [Trạng thái triển khai](docs/implementation-status.md)
 - [Hướng dẫn tài khoản và CMS trang chủ/menu](docs/identity-site.md)
+- [Triển khai VPS và vận hành domain](docs/deployment-vps.md)
 - [Hướng dẫn đào tạo/tuyển sinh, API và kiến trúc](docs/academics.md)
 - [Kế hoạch toàn bộ website](docs/README.md)
 - [Kiến trúc](docs/architecture.md)
