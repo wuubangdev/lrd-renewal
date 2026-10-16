@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": "aa609042-7913-4267-a89a-1a3e2acfeaa1",
+      "label": "About",
+      "link": {
+        "kind": "ANCHOR",
+        "target": "gioi-thieu"
+      },
+      "children": []
+    },
+    {
+      "id": "aa609042-7913-4267-a89a-1a3e2acfeaa2",
+      "label": "Programs",
+      "link": {
+        "kind": "ANCHOR",
+        "target": "dao-tao"
+      },
+      "children": []
+    },
+    {
+      "id": "aa609042-7913-4267-a89a-1a3e2acfeaa3",
+      "label": "Research",
+      "link": {
+        "kind": "RESEARCH",
+        "target": ""
+      },
+      "children": []
+    },
+    {
+      "id": "aa609042-7913-4267-a89a-1a3e2acfeaa4",
+      "label": "News",
+      "link": {
+        "kind": "NEWS",
+        "target": ""
+      },
+      "children": []
+    },
+    {
+      "id": "aa609042-7913-4267-a89a-1a3e2acfeaa5",
+      "label": "Admissions",
+      "link": {
+        "kind": "EXTERNAL",
+        "target": "https://tuyensinh.ctu.edu.vn/"
+      },
+      "children": []
+    }
+  ]
+}

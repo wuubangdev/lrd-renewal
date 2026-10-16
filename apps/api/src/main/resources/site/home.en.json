@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "kicker": "KNOWLEDGE IN PRACTICE",
+    "title": "Understand land.\nShape the future.",
+    "body": "Learning and research for the sustainable development of resources, people and communities.",
+    "action": {
+      "label": "Explore our programs",
+      "link": {
+        "kind": "ANCHOR",
+        "target": "dao-tao"
+      }
+    }
+  },
+  "heroImageId": null,
+  "heroImageAlt": "College of Environment and Natural Resources campus, Can Tho University",
+  "introduction": {
+    "kicker": "LAND RESOURCES DEPARTMENT",
+    "title": "From fundamental knowledge\nto practical impact.",
+    "body": "We connect education, research and practice in land management and regional and urban planning. Our learning environment addresses real challenges in the Mekong Delta.",
+    "action": {
+      "label": "About the department",
+      "link": {
+        "kind": "EXTERNAL",
+        "target": "https://lrd.ctu.edu.vn/"
+      }
+    }
+  },
+  "programsKicker": "YOUR LEARNING JOURNEY",
+  "programsTitle": "Choose a field. Open your future.",
+  "programsAction": {
+    "label": "Admissions information",
+    "link": {
+      "kind": "EXTERNAL",
+      "target": "https://tuyensinh.ctu.edu.vn/"
+    }
+  },
+  "programs": [
+    {
+      "id": "92009042-7913-4267-a89a-1a3e2acfeaa1",
+      "kicker": "RESOURCES & DEVELOPMENT",
+      "title": "Land Management",
+      "body": "Learn to manage and use land resources sustainably.",
+      "action": {
+        "label": "Explore the program",
+        "link": {
+          "kind": "EXTERNAL",
+          "target": "https://lrd.ctu.edu.vn/dao-tao-2/quan-ly-dat-dai-2.html"
+        }
+      }
+    },
+    {
+      "id": "92009042-7913-4267-a89a-1a3e2acfeaa2",
+      "kicker": "SPACE & COMMUNITY",
+      "title": "Regional and Urban Planning",
+      "body": "Develop planning and spatial design skills for local development needs.",
+      "action": {
+        "label": "Explore the program",
+        "link": {
+          "kind": "EXTERNAL",
+          "target": "https://lrd.ctu.edu.vn/dao-tao-2/a-i-ha-c-quy-hoa-ch-va-ng-va-a-tha.html"
+        }
+      }
+    }
+  ],
+  "newsKicker": "DEPARTMENT NEWS",
+  "newsTitle": "News & activities",
+  "newsCategory": "",
+  "newsLimit": 3,
+  "featuredIds": [],
+  "contact": {
+    "kicker": "GROW TOGETHER",
+    "title": "Looking for information?",
+    "body": "Get in touch for support with your studies and research.",
+    "action": {
+      "label": "Contact the department",
+      "link": {
+        "kind": "ANCHOR",
+        "target": "lien-he"
+      }
+    }
+  },
+  "sections": [
+    "INTRODUCTION",
+    "PROGRAMS",
+    "NEWS",
+    "CONTACT"
+  ],
+  "footer": {
+    "description": "Knowledge today.\nA sustainable tomorrow.",
+    "address": "Campus 2, 3/2 Street, Ninh Kieu Ward, Can Tho City, Vietnam",
+    "email": "ptvu@ctu.edu.vn"
+  }
+}
